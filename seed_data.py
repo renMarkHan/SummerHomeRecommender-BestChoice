@@ -40,7 +40,7 @@ def seed_properties():
     for p in properties:
         create_property(
             p.location,
-            p.type,
+            p.ptype,
             p.nightly_price,
             p.features,
             p.tags
