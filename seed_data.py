@@ -1,5 +1,6 @@
 from database import create_tables
 from user import User, create_user
+import json
 from property import Property, create_property
 
 def seed_users():
@@ -46,11 +47,31 @@ def seed_properties():
             p.tags
         )
 
+
+def seed_properties_from_json():
+    """
+    Dump properties data(json file) into our database.
+    """
+    with open("properties.json", "r", encoding="utf-8") as f:
+        properties_data = json.load(f)
+
+    for prop in properties_data:
+        create_property(
+            prop["location"],
+            prop["type"],
+            prop["nightly_price"],
+            prop["features"],
+            prop["tags"]
+        )
+
+    print(f"{len(properties_data)} properties inserted ✅")
+
+
 if __name__ == "__main__":
     """
     Create tables and seed the database with test data.
     """
     create_tables()
     seed_users()
-    seed_properties()
+    seed_properties_from_json()
     print("Database seeded with test data ✅")
