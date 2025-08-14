@@ -1,4 +1,5 @@
-from database import get_connection
+from database import get_connection, get_all_properties
+from property import Property
 
 class User:
     def __init__(self, user_id, name, group_size, preferred_env, budget_min, budget_max, travel_start_date=None, travel_end_date=None):
@@ -18,6 +19,17 @@ class User:
         """Check if a price is within user's budget."""
         return self.budget_min <= nightly_price <= self.budget_max
 
+    def match_properties(self):
+        """Return a list of Property objects matching the user's budget and preferred environment."""
+        all_props = get_all_properties()
+    
+        matched = [
+            prop for prop in all_props
+            if self.can_afford(prop.nightly_price) 
+            and prop.matches_environment(self.preferred_env)
+        ]
+    
+        return matched
 
 # ==============================
 # CRUD Operations for Users (CRUD refers to create, read, update and delete)

@@ -1,4 +1,6 @@
 import sqlite3
+from property import Property
+
 
 DB_NAME = "vacation_rentals.db"
 
@@ -35,5 +37,28 @@ def create_tables():
     )
     ''')
 
+
     conn.commit()
     conn.close()
+
+
+def get_all_properties():
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM properties")
+    rows = cursor.fetchall()
+    conn.close()
+    properties = []
+
+    for row in rows:
+            prop = Property(
+                property_id=row[0],
+                location=row[1],
+                ptype=row[2],
+                nightly_price=row[3],
+                features=row[4].split(",") if row[4] else [],
+                tags=row[5].split(",") if row[5] else []
+            )
+            properties.append(prop)
+        
+    return properties
