@@ -1,0 +1,212 @@
+[
+    {
+        "location": "Toronto, Canada",
+        "type": "Apartment",
+        "nightly_price": 120,
+        "features": "WiFi,Kitchen,Heating",
+        "tags": "Downtown,Close to subway"
+    },
+    {
+        "location": "Vancouver, Canada",
+        "type": "Condo",
+        "nightly_price": 150,
+        "features": "WiFi,Parking,Balcony",
+        "tags": "Sea view,Near park"
+    },
+    {
+        "location": "Montreal, Canada",
+        "type": "Loft",
+        "nightly_price": 110,
+        "features": "WiFi,Kitchen,Air conditioning",
+        "tags": "Old town,Historic building"
+    },
+    {
+        "location": "Calgary, Canada",
+        "type": "House",
+        "nightly_price": 200,
+        "features": "WiFi,Fireplace,Parking",
+        "tags": "Family friendly,Quiet area"
+    },
+    {
+        "location": "Ottawa, Canada",
+        "type": "Townhouse",
+        "nightly_price": 140,
+        "features": "WiFi,Kitchen,Heating",
+        "tags": "Close to parliament,Shopping area"
+    },
+    {
+        "location": "Halifax, Canada",
+        "type": "Apartment",
+        "nightly_price": 100,
+        "features": "WiFi,Parking,Heating",
+        "tags": "Harbour view,Quiet"
+    },
+    {
+        "location": "Quebec City, Canada",
+        "type": "Chalet",
+        "nightly_price": 170,
+        "features": "WiFi,Fireplace,Kitchen",
+        "tags": "Ski resort,Mountain view"
+    },
+    {
+        "location": "Banff, Canada",
+        "type": "Cabin",
+        "nightly_price": 220,
+        "features": "WiFi,Fireplace,Parking",
+        "tags": "Mountain view,Near hiking trails"
+    },
+    {
+        "location": "Victoria, Canada",
+        "type": "Bungalow",
+        "nightly_price": 130,
+        "features": "WiFi,Kitchen,Parking",
+        "tags": "Garden view,Quiet area"
+    },
+    {
+        "location": "Whistler, Canada",
+        "type": "Condo",
+        "nightly_price": 210,
+        "features": "WiFi,Fireplace,Balcony",
+        "tags": "Ski resort,Mountain view"
+    },
+    {
+        "location": "Edmonton, Canada",
+        "type": "Apartment",
+        "nightly_price": 95,
+        "features": "WiFi,Heating,Kitchen",
+        "tags": "City center,Near mall"
+    },
+    {
+        "location": "Saskatoon, Canada",
+        "type": "House",
+        "nightly_price": 160,
+        "features": "WiFi,Parking,Heating",
+        "tags": "Family friendly,Quiet neighborhood"
+    },
+    {
+        "location": "Winnipeg, Canada",
+        "type": "Townhouse",
+        "nightly_price": 125,
+        "features": "WiFi,Kitchen,Air conditioning",
+        "tags": "Downtown,Near museum"
+    },
+    {
+        "location": "Kelowna, Canada",
+        "type": "Villa",
+        "nightly_price": 250,
+        "features": "WiFi,Pool,Parking",
+        "tags": "Lake view,Private garden"
+    },
+    {
+        "location": "Niagara Falls, Canada",
+        "type": "Apartment",
+        "nightly_price": 180,
+        "features": "WiFi,Kitchen,Balcony",
+        "tags": "Falls view,Near casino"
+    },
+    {
+        "location": "Charlottetown, Canada",
+        "type": "Bungalow",
+        "nightly_price": 105,
+        "features": "WiFi,Parking,Heating",
+        "tags": "Historic area,Near theatre"
+    },
+    {
+        "location": "St. John's, Canada",
+        "type": "House",
+        "nightly_price": 155,
+        "features": "WiFi,Kitchen,Fireplace",
+        "tags": "Ocean view,Colourful houses"
+    },
+    {
+        "location": "Thunder Bay, Canada",
+        "type": "Cabin",
+        "nightly_price": 140,
+        "features": "WiFi,Fireplace,Parking",
+        "tags": "Lake view,Quiet"
+    },
+    {
+        "location": "Regina, Canada",
+        "type": "Townhouse",
+        "nightly_price": 135,
+        "features": "WiFi,Kitchen,Heating",
+        "tags": "City center,Near park"
+    },
+    {
+        "location": "Kamloops, Canada",
+        "type": "Chalet",
+        "nightly_price": 175,
+        "features": "WiFi,Fireplace,Balcony",
+        "tags": "Ski resort,Mountain view"
+    },
+    {
+        "location": "London, Canada",
+        "type": "Apartment",
+        "nightly_price": 115,
+        "features": "WiFi,Kitchen,Heating",
+        "tags": "Near university,Quiet"
+    },
+    {
+        "location": "Guelph, Canada",
+        "type": "Bungalow",
+        "nightly_price": 130,
+        "features": "WiFi,Parking,Kitchen",
+        "tags": "Garden,Quiet area"
+    },
+    {
+        "location": "Barrie, Canada",
+        "type": "House",
+        "nightly_price": 160,
+        "features": "WiFi,Kitchen,Parking",
+        "tags": "Near lake,Family friendly"
+    },
+    {
+        "location": "Sudbury, Canada",
+        "type": "Condo",
+        "nightly_price": 140,
+        "features": "WiFi,Balcony,Parking",
+        "tags": "Downtown,Near shopping"
+    },
+    {
+        "location": "Kingston, Canada",
+        "type": "Apartment",
+        "nightly_price": 125,
+        "features": "WiFi,Kitchen,Heating",
+        "tags": "Historic district,Near waterfront"
+    },
+    {
+        "location": "Moncton, Canada",
+        "type": "House",
+        "nightly_price": 150,
+        "features": "WiFi,Parking,Fireplace",
+        "tags": "Quiet area,Near park"
+    },
+    {
+        "location": "Fredericton, Canada",
+        "type": "Townhouse",
+        "nightly_price": 135,
+        "features": "WiFi,Kitchen,Heating",
+        "tags": "Near downtown,Quiet"
+    },
+    {
+        "location": "Yellowknife, Canada",
+        "type": "Cabin",
+        "nightly_price": 190,
+        "features": "WiFi,Fireplace,Parking",
+        "tags": "Aurora view,Remote location"
+    },
+    {
+        "location": "Whitehorse, Canada",
+        "type": "Chalet",
+        "nightly_price": 200,
+        "features": "WiFi,Fireplace,Kitchen",
+        "tags": "Mountain view,Quiet"
+    },
+    {
+        "location": "Tofino, Canada",
+        "type": "Villa",
+        "nightly_price": 260,
+        "features": "WiFi,Ocean view,Fireplace",
+        "tags": "Beachfront,Surfing spot"
+    }
+]
