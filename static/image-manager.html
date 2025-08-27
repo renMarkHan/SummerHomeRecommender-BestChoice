@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏝 Property Image Manager</title>
+    
+    <!-- Import CSS file -->
+    <link rel="stylesheet" href="/static/css/style.css?v=1755654007">
+    
+    <!-- Import Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .image-manager {
+            padding: var(--spacing-2xl) 0;
+        }
+        
+        .upload-section {
+            background: var(--bg-primary);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .upload-area {
+            border: 2px dashed var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-3xl);
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .upload-area:hover {
+            border-color: var(--primary-color);
+            background: var(--bg-tertiary);
+        }
+        
+        .upload-area.dragover {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .upload-icon {
+            font-size: 3rem;
+            color: var(--text-light);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .upload-text {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .upload-hint {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+        
+        .property-item {
+            background: var(--bg-primary);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+        
+        .property-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .property-title {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .property-id {
+            background: var(--primary-color);
+            color: white;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .current-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-md);
+            border: 1px solid var(--border-color);
+        }
+        
+        .no-image {
+            width: 100%;
+            height: 150px;
+            background: var(--bg-tertiary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            border: 1px dashed var(--border-color);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .image-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+        
+        .btn-small {
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-size: 0.8rem;
+        }
+        
+        .upload-progress {
+            width: 100%;
+            height: 4px;
+            background: var(--border-color);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: var(--spacing-sm);
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: var(--primary-color);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .status-message {
+            margin-top: var(--spacing-sm);
+            font-size: 0.9rem;
+        }
+        
+        .status-success {
+            color: var(--secondary-color);
+        }
+        
+        .status-error {
+            color: #ef4444;
+        }
+        
+        .bulk-upload {
+            margin-top: var(--spacing-lg);
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .bulk-upload h3 {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+        
+        .bulk-upload p {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .bulk-upload .btn {
+            margin-right: var(--spacing-sm);
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-home"></i>
+                <h1>Property Image Manager</h1>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Main Site
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="image-manager">
+                <h2>🏠 Property Image Management</h2>
+                <p>Upload and manage images for your vacation rental properties</p>
+                
+                <!-- Upload Section -->
+                <div class="upload-section">
+                    <h3><i class="fas fa-cloud-upload-alt"></i> Upload Images</h3>
+                    
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="upload-text">Drag & Drop images here or click to browse</div>
+                        <div class="upload-hint">Supports JPG, PNG, GIF (Max 5MB per image)</div>
+                        <input type="file" id="fileInput" class="file-input" multiple accept="image/*">
+                    </div>
+                    
+                    <div class="bulk-upload">
+                        <h3><i class="fas fa-images"></i> Bulk Upload Options</h3>
+                        <p>For multiple images, you can also use these options:</p>
+                        <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
+                            <i class="fas fa-folder-open"></i>
+                            Select Multiple Images
+                        </button>
+                        <button class="btn btn-outline" onclick="showBulkUploadHelp()">
+                            <i class="fas fa-question-circle"></i>
+                            Bulk Upload Help
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Properties List -->
+                <div class="upload-section">
+                    <h3><i class="fas fa-list"></i> Properties List</h3>
+                    <p>Click on any property to upload or change its image</p>
+                    
+                    <div class="properties-grid" id="propertiesGrid">
+                        <!-- Properties will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Upload Progress Modal -->
+    <div class="modal" id="uploadModal" style="display: none;">
+        <div class="modal-content">
+            <h3>Uploading Images...</h3>
+            <div id="uploadProgress"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        let properties = [];
+        let uploadedFiles = [];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProperties();
+            setupUploadArea();
+        });
+
+        // Setup drag and drop upload area
+        function setupUploadArea() {
+            const uploadArea = document.getElementById('uploadArea');
+            const fileInput = document.getElementById('fileInput');
+
+            // Click to upload
+            uploadArea.addEventListener('click', () => fileInput.click());
+
+            // Drag and drop events
+            uploadArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadArea.classList.add('dragover');
+            });
+
+            uploadArea.addEventListener('dragleave', () => {
+                uploadArea.classList.remove('dragover');
+            });
+
+            uploadArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+                const files = Array.from(e.dataTransfer.files);
+                handleFiles(files);
+            });
+
+            // File input change
+            fileInput.addEventListener('change', (e) => {
+                const files = Array.from(e.target.files);
+                handleFiles(files);
+            });
+        }
+
+        // Handle uploaded files
+        function handleFiles(files) {
+            const imageFiles = files.filter(file => file.type.startsWith('image/'));
+            
+            if (imageFiles.length === 0) {
+                alert('Please select image files only.');
+                return;
+            }
+
+            uploadedFiles = imageFiles;
+            showPropertiesForImageAssignment();
+        }
+
+        // Load properties from API
+        async function loadProperties() {
+            try {
+                const response = await fetch('/api/properties');
+                const data = await response.json();
+                properties = data.properties || [];
+                renderPropertiesGrid();
+            } catch (error) {
+                console.error('Failed to load properties:', error);
+                showNotification('Failed to load properties', 'error');
+            }
+        }
+
+        // Render properties grid
+        function renderPropertiesGrid() {
+            const grid = document.getElementById('propertiesGrid');
+            grid.innerHTML = '';
+
+            properties.forEach(property => {
+                const propertyItem = createPropertyItem(property);
+                grid.appendChild(propertyItem);
+            });
+        }
+
+        // Create property item
+        function createPropertyItem(property) {
+            const div = document.createElement('div');
+            div.className = 'property-item';
+            
+            const hasImage = property.image_url && !property.image_url.includes('unsplash.com');
+            const imageUrl = hasImage ? property.image_url : null;
+            
+            div.innerHTML = `
+                <div class="property-header">
+                    <div class="property-title">${property.location}</div>
+                    <div class="property-id">#${property.property_id}</div>
+                </div>
+                
+                ${imageUrl ? 
+                    `<img src="${imageUrl}" alt="${property.location}" class="current-image">` :
+                    `<div class="no-image">
+                        <i class="fas fa-image"></i>
+                        <span>No Image</span>
+                    </div>`
+                }
+                
+                <div class="property-info">
+                    <div><strong>Type:</strong> ${property.type}</div>
+                    <div><strong>Price:</strong> $${property.nightly_price}/night</div>
+                </div>
+                
+                <div class="image-actions">
+                    <button class="btn btn-primary btn-small" onclick="assignImage(${property.property_id})">
+                        <i class="fas fa-upload"></i>
+                        ${hasImage ? 'Change Image' : 'Upload Image'}
+                    </button>
+                    ${hasImage ? `
+                        <button class="btn btn-outline btn-small" onclick="removeImage(${property.property_id})">
+                            <i class="fas fa-trash"></i>
+                            Remove
+                        </button>
+                    ` : ''}
+                </div>
+            `;
+            
+            return div;
+        }
+
+        // Show properties for image assignment
+        function showPropertiesForImageAssignment() {
+            if (uploadedFiles.length === 0) return;
+
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'flex';
+            
+            modal.innerHTML = `
+                <div class="modal-content" style="max-width: 800px; max-height: 80vh; overflow-y: auto;">
+                    <div class="modal-header">
+                        <h3>Assign Images to Properties</h3>
+                        <button onclick="this.closest('.modal').remove()" class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <p>You have ${uploadedFiles.length} image(s) to assign. Select properties for each image:</p>
+                        
+                        <div id="imageAssignmentList">
+                            ${uploadedFiles.map((file, index) => `
+                                <div class="image-assignment-item" style="margin-bottom: 20px; padding: 15px; border: 1px solid #e5e7eb; border-radius: 8px;">
+                                    <div style="display: flex; gap: 15px; align-items: center;">
+                                        <img src="${URL.createObjectURL(file)}" alt="Preview" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px;">
+                                        <div style="flex: 1;">
+                                            <div><strong>File:</strong> ${file.name}</div>
+                                            <div><strong>Size:</strong> ${(file.size / 1024 / 1024).toFixed(2)} MB</div>
+                                            <select id="propertySelect${index}" style="margin-top: 10px; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; width: 100%;">
+                                                <option value="">Select a property...</option>
+                                                ${properties.map(prop => `
+                                                    <option value="${prop.property_id}">#${prop.property_id} - ${prop.location} (${prop.type})</option>
+                                                `).join('')}
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        
+                        <div style="margin-top: 20px; text-align: center;">
+                            <button class="btn btn-primary" onclick="processImageAssignments()">
+                                <i class="fas fa-save"></i>
+                                Assign Images
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+        }
+
+        // Process image assignments
+        async function processImageAssignments() {
+            const assignments = [];
+            
+            for (let i = 0; i < uploadedFiles.length; i++) {
+                const propertyId = document.getElementById(`propertySelect${i}`).value;
+                if (propertyId) {
+                    assignments.push({
+                        propertyId: parseInt(propertyId),
+                        file: uploadedFiles[i]
+                    });
+                }
+            }
+            
+            if (assignments.length === 0) {
+                alert('Please select at least one property for image assignment.');
+                return;
+            }
+            
+            // Process uploads
+            for (const assignment of assignments) {
+                await uploadImageForProperty(assignment.file, assignment.propertyId);
+            }
+            
+            // Close modal and refresh
+            document.querySelector('.modal').remove();
+            uploadedFiles = [];
+            loadProperties();
+            
+            showNotification(`Successfully assigned ${assignments.length} image(s)`, 'success');
+        }
+
+        // Upload image for specific property
+        async function uploadImageForProperty(file, propertyId) {
+            const formData = new FormData();
+            formData.append('image', file);
+            formData.append('property_id', propertyId);
+            
+            try {
+                const response = await fetch('/api/upload_property_image', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`Upload failed: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                console.log(`Image uploaded for property ${propertyId}:`, result);
+                
+            } catch (error) {
+                console.error(`Failed to upload image for property ${propertyId}:`, error);
+                showNotification(`Failed to upload image for property ${propertyId}`, 'error');
+            }
+        }
+
+        // Assign image to property (single)
+        async function assignImage(propertyId) {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.onchange = async (e) => {
+                const file = e.target.files[0];
+                if (file) {
+                    await uploadImageForProperty(file, propertyId);
+                    loadProperties(); // Refresh the display
+                }
+            };
+            input.click();
+        }
+
+        // Remove image from property
+        async function removeImage(propertyId) {
+            if (!confirm('Are you sure you want to remove this image?')) return;
+            
+            try {
+                const response = await fetch(`/api/remove_property_image/${propertyId}`, {
+                    method: 'DELETE'
+                });
+                
+                if (response.ok) {
+                    showNotification('Image removed successfully', 'success');
+                    loadProperties(); // Refresh the display
+                } else {
+                    throw new Error(`Failed to remove image: ${response.status}`);
+                }
+            } catch (error) {
+                console.error('Failed to remove image:', error);
+                showNotification('Failed to remove image', 'error');
+            }
+        }
+
+        // Show bulk upload help
+        function showBulkUploadHelp() {
+            alert(`Bulk Upload Instructions:
+
+1. Prepare your images with descriptive names (e.g., "toronto_apartment_1.jpg")
+2. Use the "Select Multiple Images" button to choose all images at once
+3. Assign each image to the appropriate property
+4. Images will be automatically uploaded and linked
+
+Tips:
+- Use JPG or PNG format for best compatibility
+- Keep file sizes under 5MB for faster uploads
+- Name your files descriptively to make assignment easier`);
+        }
+
+        // Utility functions
+        function showNotification(message, type = 'info') {
+            // Simple notification implementation
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: white;
+                padding: 15px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 1000;
+                border-left: 4px solid ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#3b82f6'};
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
