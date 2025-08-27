@@ -11,15 +11,15 @@ A comprehensive AI-powered vacation property recommendation platform that combin
 ## 📸 **Application Screenshots**
 
 ### **Main Interface**
-![Main Interface](https://user-images.githubusercontent.com/your-username/your-repo/main-interface.png)
-*Beautiful property browsing interface with advanced filtering options*
+<img width="1429" height="840" alt="Screenshot 2025-08-27 at 16 45 15" src="https://github.com/user-attachments/assets/51954898-6198-429b-afd6-c898f97bff34" />
 
-### **AI Chat Assistant**
-![AI Chat](https://user-images.githubusercontent.com/your-username/your-repo/ai-chat.png)
-*Intelligent travel planning with natural language conversation*
+*Beautiful property browsing interface with advanced filtering options*
+<img width="1354" height="827" alt="Screenshot 2025-08-27 at 16 45 52" src="https://github.com/user-attachments/assets/bd93420a-3702-45ec-b3a9-c16fe9514bd9" />
+
 
 ### **Property Details**
-![Property Details](https://user-images.githubusercontent.com/your-username/your-repo/property-details.png)
+<img width="1283" height="665" alt="Screenshot 2025-08-27 at 16 45 36" src="https://github.com/user-attachments/assets/f4020ffa-4e52-41c9-8080-04c26fa1d9b7" />
+
 *Detailed property information with high-quality images and amenities*
 
 ## ✨ Features
