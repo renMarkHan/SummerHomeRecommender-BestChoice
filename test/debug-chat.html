@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Chat Messages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .debug-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .floating-chat-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease;
+            z-index: 2000;
+            border: none;
+            user-select: none;
+        }
+        .floating-chat-toggle:hover {
+            transform: scale(1.1);
+        }
+        .floating-chat-toggle i {
+            font-size: 1.5rem;
+        }
+        .floating-chat-modal {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 380px;
+            height: 500px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 2000;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        .floating-chat-modal.show {
+            display: flex;
+        }
+        .floating-chat-header {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .floating-chat-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f9fafb;
+        }
+        .floating-chat-input-container {
+            padding: 15px;
+            border-top: 1px solid #e5e7eb;
+            background: white;
+        }
+        .chat-input-wrapper {
+            display: flex;
+            gap: 10px;
+        }
+        .chat-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            resize: none;
+            font-family: inherit;
+        }
+        .send-button {
+            padding: 10px 15px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .send-button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+        
+        /* Message Styles */
+        .message {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            animation: fadeInUp 0.3s ease;
+        }
+        .message-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .bot-message .message-avatar {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+        }
+        .user-message .message-avatar {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+        }
+        .message-content {
+            flex: 1;
+            max-width: calc(100% - 50px);
+        }
+        .message-text {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        .user-message .message-text {
+            background: #d1fae5;
+        }
+        .message-time {
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-left: 10px;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .debug-info {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .debug-info h3 {
+            margin-top: 0;
+            color: #374151;
+        }
+        .debug-info p {
+            margin: 5px 0;
+        }
+        .success { color: #059669; }
+        .error { color: #dc2626; }
+        .warning { color: #d97706; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="debug-content">
+        <h1>Debug Chat Messages</h1>
+        <p>This page tests the floating chat message display functionality.</p>
+        
+        <div class="debug-info">
+            <h3>Debug Information</h3>
+            <p>Button found: <span id="button-status">Checking...</span></p>
+            <p>Modal found: <span id="modal-status">Checking...</span></p>
+            <p>Messages container found: <span id="messages-status">Checking...</span></p>
+            <p>Input found: <span id="input-status">Checking...</span></p>
+            <p>Send button found: <span id="send-status">Checking...</span></p>
+            <p>Events bound: <span id="events-status">Checking...</span></p>
+            <p>API available: <span id="api-status">Checking...</span></p>
+        </div>
+        
+        <h2>Test Instructions:</h2>
+        <ol>
+            <li>Click the blue button in the bottom right corner</li>
+            <li>Type a message in the chat input</li>
+            <li>Click send or press Enter</li>
+            <li>Check if messages appear in the chat area</li>
+            <li>Check browser console for any errors</li>
+        </ol>
+        
+        <h2>Manual Test Buttons:</h2>
+        <button onclick="testAddUserMessage()" style="margin: 5px; padding: 10px; background: #10b981; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Test Add User Message
+        </button>
+        <button onclick="testAddBotMessage()" style="margin: 5px; padding: 10px; background: #3b82f6; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Test Add Bot Message
+        </button>
+        <button onclick="clearMessages()" style="margin: 5px; padding: 10px; background: #ef4444; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Clear Messages
+        </button>
+    </div>
+
+    <!-- Floating AI Assistant -->
+    <div class="floating-chat-toggle" id="floatingChatToggle">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- Floating Chat Modal -->
+    <div class="floating-chat-modal" id="floatingChatModal">
+        <div class="floating-chat-header">
+            <div class="chat-title">
+                <i class="fas fa-robot"></i>
+                <span>AI Smart Assistant</span>
+            </div>
+            <button class="close-chat-btn" id="closeChatBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="floating-chat-messages" id="floatingChatMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <div class="message-text">
+                        Hello! I'm your AI assistant. How can I help you today?
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-chat-input-container">
+            <div class="chat-input-wrapper">
+                <textarea 
+                    id="floatingChatInput" 
+                    class="chat-input" 
+                    placeholder="Type your message here..."
+                    rows="1"
+                ></textarea>
+                <button id="floatingSendButton" class="send-button" disabled>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🔧 Debug page loaded, initializing...');
+            
+            // Get elements
+            const toggle = document.getElementById('floatingChatToggle');
+            const modal = document.getElementById('floatingChatModal');
+            const messagesContainer = document.getElementById('floatingChatMessages');
+            const input = document.getElementById('floatingChatInput');
+            const sendBtn = document.getElementById('floatingSendButton');
+            const closeBtn = document.getElementById('closeChatBtn');
+            
+            // Update debug info
+            document.getElementById('button-status').innerHTML = toggle ? '<span class="success">✅ Found</span>' : '<span class="error">❌ Not found</span>';
+            document.getElementById('modal-status').innerHTML = modal ? '<span class="success">✅ Found</span>' : '<span class="error">❌ Not found</span>';
+            document.getElementById('messages-status').innerHTML = messagesContainer ? '<span class="success">✅ Found</span>' : '<span class="error">❌ Not found</span>';
+            document.getElementById('input-status').innerHTML = input ? '<span class="success">✅ Found</span>' : '<span class="error">❌ Not found</span>';
+            document.getElementById('send-status').innerHTML = sendBtn ? '<span class="success">✅ Found</span>' : '<span class="error">❌ Not found</span>';
+            
+            // Check API availability
+            if (window.API && window.API.sendChatMessage) {
+                document.getElementById('api-status').innerHTML = '<span class="success">✅ Available</span>';
+            } else {
+                document.getElementById('api-status').innerHTML = '<span class="warning">⚠️ Not available (using fallback)</span>';
+            }
+            
+            if (toggle && modal && messagesContainer && input && sendBtn) {
+                console.log('🔧 All elements found, binding events...');
+                
+                // Toggle button click
+                toggle.addEventListener('click', function() {
+                    console.log('🔧 Toggle button clicked!');
+                    const isVisible = modal.classList.contains('show');
+                    
+                    if (isVisible) {
+                        modal.classList.remove('show');
+                        console.log('🔧 Chat modal hidden');
+                    } else {
+                        modal.classList.add('show');
+                        console.log('🔧 Chat modal shown');
+                    }
+                });
+                
+                // Close button click
+                closeBtn.addEventListener('click', function() {
+                    console.log('🔧 Close button clicked');
+                    modal.classList.remove('show');
+                });
+                
+                // Input handling
+                input.addEventListener('input', function() {
+                    this.style.height = 'auto';
+                    this.style.height = this.scrollHeight + 'px';
+                    
+                    const hasText = this.value.trim().length > 0;
+                    sendBtn.disabled = !hasText;
+                    console.log('🔧 Input changed, send button enabled:', hasText);
+                });
+                
+                input.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault();
+                        sendMessage();
+                    }
+                });
+                
+                sendBtn.addEventListener('click', function() {
+                    console.log('🔧 Send button clicked');
+                    sendMessage();
+                });
+                
+                document.getElementById('events-status').innerHTML = '<span class="success">✅ Bound</span>';
+                console.log('🔧 All events bound successfully');
+                
+            } else {
+                document.getElementById('events-status').innerHTML = '<span class="error">❌ Failed - elements missing</span>';
+                console.error('🔧 Required elements not found!');
+            }
+            
+            function sendMessage() {
+                if (!input || !input.value.trim()) return;
+                
+                const message = input.value.trim();
+                console.log('🔧 Sending message:', message);
+                
+                // Add user message
+                addMessage(message, 'user');
+                
+                // Clear input
+                input.value = '';
+                input.style.height = 'auto';
+                sendBtn.disabled = true;
+                
+                // Simulate AI response
+                setTimeout(() => {
+                    addMessage('This is a test response. The chat is working!', 'bot');
+                }, 1000);
+            }
+            
+            function addMessage(text, type) {
+                const messagesContainer = document.getElementById('floatingChatMessages');
+                if (!messagesContainer) {
+                    console.error('🔧 Messages container not found!');
+                    return;
+                }
+                
+                console.log('🔧 Adding message:', { text, type, container: messagesContainer });
+                
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${type}-message`;
+                
+                const avatarDiv = document.createElement('div');
+                avatarDiv.className = 'message-avatar';
+                avatarDiv.innerHTML = type === 'user' ? '<i class="fas fa-user"></i>' : '<i class="fas fa-robot"></i>';
+                
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'message-content';
+                
+                const textDiv = document.createElement('div');
+                textDiv.className = 'message-text';
+                textDiv.textContent = text;
+                
+                const timeDiv = document.createElement('div');
+                timeDiv.className = 'message-time';
+                timeDiv.textContent = new Date().toLocaleTimeString();
+                
+                contentDiv.appendChild(textDiv);
+                contentDiv.appendChild(timeDiv);
+                messageDiv.appendChild(avatarDiv);
+                messageDiv.appendChild(contentDiv);
+                
+                messagesContainer.appendChild(messageDiv);
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                
+                console.log('🔧 Message added successfully:', messageDiv);
+            }
+            
+            // Expose functions for manual testing
+            window.testAddUserMessage = function() {
+                addMessage('This is a test user message', 'user');
+            };
+            
+            window.testAddBotMessage = function() {
+                addMessage('This is a test bot message', 'bot');
+            };
+            
+            window.clearMessages = function() {
+                const messagesContainer = document.getElementById('floatingChatMessages');
+                if (messagesContainer) {
+                    // Keep only the first welcome message
+                    const welcomeMessage = messagesContainer.querySelector('.message');
+                    messagesContainer.innerHTML = '';
+                    if (welcomeMessage) {
+                        messagesContainer.appendChild(welcomeMessage);
+                    }
+                }
+            };
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 3px;
+            white-space: pre-wrap;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cache Test Page</h1>
+    <p>Test cache functionality and version control</p>
+    
+    <!-- Test cache busting -->
+    <div class="test-section">
+        <h3>Test Cache Busting</h3>
+        <p>Test if cache busting is working correctly</p>
+        
+        <button class="test-button" onclick="testCacheBusting()">Test Cache Busting</button>
+        
+        <div id="cacheResult" class="result"></div>
+    </div>
+    
+    <!-- Test file loading -->
+    <div class="test-section">
+        <h3>Test File Loading</h3>
+        <p>Test if files are loading with correct versions</p>
+        
+        <button class="test-button" onclick="testFileLoading()">Test File Loading</button>
+        
+        <div id="fileResult" class="result"></div>
+    </div>
+    
+    <script>
+        // Test cache busting
+        async function testCacheBusting() {
+            const resultDiv = document.getElementById('cacheResult');
+            resultDiv.innerHTML = 'Testing cache busting...';
+            resultDiv.className = 'result';
+            
+            try {
+                // Test loading CSS with version parameter
+                const cssResponse = await fetch('/static/css/style.css?v=1234567890');
+                const cssStatus = cssResponse.status;
+                
+                // Test loading JS with version parameter
+                const jsResponse = await fetch('/static/js/ui.js?v=1234567890');
+                const jsStatus = jsResponse.status;
+                
+                resultDiv.innerHTML = `CSS Status: ${cssStatus}\nJS Status: ${jsStatus}`;
+                resultDiv.className = 'result success';
+            } catch (error) {
+                resultDiv.innerHTML = 'Error: ' + error.message;
+                resultDiv.className = 'result error';
+            }
+        }
+        
+        // Test file loading
+        async function testFileLoading() {
+            const resultDiv = document.getElementById('fileResult');
+            resultDiv.innerHTML = 'Testing file loading...';
+            resultDiv.className = 'result';
+            
+            try {
+                // Test loading various files
+                const files = [
+                    '/static/css/style.css',
+                    '/static/js/ui.js',
+                    '/static/js/properties.js',
+                    '/static/js/budget.js',
+                    '/static/js/location-search.js'
+                ];
+                
+                const results = [];
+                for (const file of files) {
+                    try {
+                        const response = await fetch(file);
+                        results.push(`${file}: ${response.status}`);
+                    } catch (error) {
+                        results.push(`${file}: Error - ${error.message}`);
+                    }
+                }
+                
+                resultDiv.innerHTML = results.join('\n');
+                resultDiv.className = 'result success';
+            } catch (error) {
+                resultDiv.innerHTML = 'Error: ' + error.message;
+                resultDiv.className = 'result error';
+            }
+        }
+    </script>
+</body>
+</html>

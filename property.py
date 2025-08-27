@@ -1,14 +1,18 @@
-import database
+# import database  # Removed to avoid circular import
 
 # property.py
 class Property:
-    def __init__(self, property_id, location, ptype, nightly_price, features, tags):
+    def __init__(self, property_id, location, ptype, nightly_price, features, tags, image_url=None, image_alt=None, latitude=None, longitude=None):
         self.property_id = property_id
         self.location = location
         self.ptype = ptype
         self.nightly_price = nightly_price
         self.features = features  # could be a list
         self.tags = tags          # could be a list
+        self.image_url = image_url
+        self.image_alt = image_alt
+        self.latitude = latitude
+        self.longitude = longitude
 
     def __repr__(self):
         return f"<Property {self.ptype} in {self.location} @ ${self.nightly_price}/night>"
@@ -22,18 +26,20 @@ class Property:
 # ==============================
 # CRUD Operations for Property (CRUD refers to create, read, update and delete)
 # ==============================
-def create_property(location, ptype, nightly_price, features, tags):
-    conn = database.get_connection()
+def create_property(location, ptype, nightly_price, features, tags, image_url=None, image_alt=None):
+    import sqlite3
+    conn = sqlite3.connect("vacation_rentals.db")
     cursor = conn.cursor()
     cursor.execute("""
-        INSERT INTO properties (location, type, nightly_price, features, tags)
-        VALUES (?, ?, ?, ?, ?)
-    """, (location, ptype, nightly_price, features, tags))
+        INSERT INTO properties (location, type, nightly_price, features, tags, image_url, image_alt)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    """, (location, ptype, nightly_price, features, tags, image_url, image_alt))
     conn.commit()
     conn.close()
 
 def get_property(property_id):
-    conn = database.get_connection()
+    import sqlite3
+    conn = sqlite3.connect("vacation_rentals.db")
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM properties WHERE property_id = ?", (property_id,))
     prop = cursor.fetchone()
@@ -41,7 +47,8 @@ def get_property(property_id):
     return prop
 
 def update_property(property_id, **kwargs):
-    conn = database.get_connection()
+    import sqlite3
+    conn = sqlite3.connect("vacation_rentals.db")
     cursor = conn.cursor()
     fields = ", ".join(f"{key} = ?" for key in kwargs.keys())
     values = list(kwargs.values()) + [property_id]
@@ -50,7 +57,8 @@ def update_property(property_id, **kwargs):
     conn.close()
 
 def delete_property(property_id):
-    conn = database.get_connection()
+    import sqlite3
+    conn = sqlite3.connect("vacation_rentals.db")
     cursor = conn.cursor()
     cursor.execute("DELETE FROM properties WHERE property_id = ?", (property_id,))
     conn.commit()

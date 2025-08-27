@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Smart Match</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .debug-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .test-button { padding: 10px 20px; margin: 10px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .test-button:hover { background: #0056b3; }
+        .result { margin: 10px 0; padding: 10px; background: #f8f9fa; border-radius: 5px; }
+        .error { background: #f8d7da; color: #721c24; }
+        .success { background: #d4edda; color: #155724; }
+    </style>
+</head>
+<body>
+    <h1>Smart Match Debug Page</h1>
+    
+    <div class="debug-section">
+        <h3>1. Test Smart Match API Directly</h3>
+        <button class="test-button" onclick="testSmartMatchAPI()">Test Smart Match API</button>
+        <div id="apiResult" class="result"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>2. Test Frontend Smart Match Function</h3>
+        <button class="test-button" onclick="testFrontendSmartMatch()">Test Frontend Smart Match</button>
+        <div id="frontendResult" class="result"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>3. Check Module Availability</h3>
+        <button class="test-button" onclick="checkModules()">Check Modules</button>
+        <div id="moduleResult" class="result"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>4. Test Weight Storage</h3>
+        <button class="test-button" onclick="testWeightStorage()">Test Weight Storage</button>
+        <div id="weightResult" class="result"></div>
+    </div>
+
+    <script>
+        async function testSmartMatchAPI() {
+            const resultDiv = document.getElementById('apiResult');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                const response = await fetch('/api/smart_match', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        selected_types: ["House"],
+                        selected_features: ["WiFi"],
+                        center_location: "Toronto",
+                        radius: 50,
+                        min_budget: 0,
+                        max_budget: 1000,
+                        location_weight: 1,
+                        type_weight: 1,
+                        features_weight: 1,
+                        price_weight: 1
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                resultDiv.innerHTML = `<div class="success">✅ API Success!</div><pre>${JSON.stringify(result, null, 2)}</pre>`;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">❌ API Error: ${error.message}</div>`;
+            }
+        }
+        
+        function testFrontendSmartMatch() {
+            const resultDiv = document.getElementById('frontendResult');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                // Simulate the executeSmartMatch function
+                const budgetState = { minBudget: 0, maxBudget: 1000 };
+                const featuresState = { selectedFeatures: ["WiFi"] };
+                const propertyTypesState = { selectedPropertyTypes: ["House"] };
+                const locationState = { location: 'Toronto', radius: 50 };
+                const userWeights = { locationWeight: 1, typeWeight: 1, featuresWeight: 1, priceWeight: 1 };
+                
+                resultDiv.innerHTML = `
+                    <div class="success">✅ Frontend Function Test Success!</div>
+                    <div>Budget: ${JSON.stringify(budgetState)}</div>
+                    <div>Features: ${JSON.stringify(featuresState)}</div>
+                    <div>Property Types: ${JSON.stringify(propertyTypesState)}</div>
+                    <div>Location: ${JSON.stringify(locationState)}</div>
+                    <div>Weights: ${JSON.stringify(userWeights)}</div>
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">❌ Frontend Error: ${error.message}</div>`;
+            }
+        }
+        
+        function checkModules() {
+            const resultDiv = document.getElementById('moduleResult');
+            const modules = {
+                'window.Budget': !!window.Budget,
+                'window.Features': !!window.Features,
+                'window.PropertyTypes': !!window.PropertyTypes,
+                'window.LocationSearch': !!window.LocationSearch,
+                'window.Chat': !!window.Chat
+            };
+            
+            let html = '<div>Module Availability:</div>';
+            for (const [module, available] of Object.entries(modules)) {
+                html += `<div>${module}: ${available ? '✅' : '❌'}</div>`;
+            }
+            
+            resultDiv.innerHTML = html;
+        }
+        
+        function testWeightStorage() {
+            const resultDiv = document.getElementById('weightResult');
+            
+            // Test storing weights
+            const testWeights = {
+                locationWeight: 5,
+                typeWeight: 8,
+                featuresWeight: 6,
+                priceWeight: 7
+            };
+            
+            localStorage.setItem('userWeights', JSON.stringify(testWeights));
+            
+            // Test retrieving weights
+            const retrievedWeights = JSON.parse(localStorage.getItem('userWeights') || '{}');
+            
+            resultDiv.innerHTML = `
+                <div class="success">✅ Weight Storage Test Success!</div>
+                <div>Stored: ${JSON.stringify(testWeights)}</div>
+                <div>Retrieved: ${JSON.stringify(retrievedWeights)}</div>
+                <div>Match: ${JSON.stringify(testWeights) === JSON.stringify(retrievedWeights) ? '✅' : '❌'}</div>
+            `;
+        }
+    </script>
+</body>
+</html>
