@@ -33,6 +33,7 @@ A comprehensive AI-powered vacation property recommendation platform that combin
   - Interactive elements
 
 ### 🔍 **Advanced Filtering System**
+- [Our Smart Matching Method Explanation](https://utoronto-my.sharepoint.com/:p:/g/personal/siyi_you_rotman_utoronto_ca/EeZSS44WkhZJg8CnOs80y9wBF1Hyd6bqSxKaySh1zo3Rxw?e=cfca8a&nav=eyJzSWQiOjI3MSwiY0lkIjoyMzExODU4MDk1fQ)
 - **Location-Based Search**: Radius-based property discovery
 - **Multi-Criteria Filtering**: Budget, property type, features, amenities
 - **Smart Persistence**: Filter state maintained across page refreshes
