@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .debug-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        button { padding: 10px 20px; margin: 5px; }
+        #debugOutput { background: #f5f5f5; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Debug Page</h1>
+    
+    <div class="debug-section">
+        <h3>Test Buttons</h3>
+        <button id="applyFilters">Apply Filters</button>
+        <button id="floatingChatBtn">Floating Chat</button>
+        <button onclick="testProperties()">Test Properties Module</button>
+        <button onclick="testDOM()">Test DOM Elements</button>
+    </div>
+    
+    <div class="debug-section">
+        <h3>Debug Output</h3>
+        <div id="debugOutput"></div>
+    </div>
+    
+    <script>
+        function log(message) {
+            const output = document.getElementById('debugOutput');
+            output.innerHTML += '<div>' + new Date().toLocaleTimeString() + ': ' + message + '</div>';
+            console.log(message);
+        }
+        
+        function testProperties() {
+            log('Testing Properties module...');
+            if (window.Properties) {
+                log('Properties module found: ' + Object.keys(window.Properties));
+            } else {
+                log('Properties module NOT found!');
+            }
+        }
+        
+        function testDOM() {
+            log('Testing DOM elements...');
+            const elements = ['applyFilters', 'floatingChatBtn', 'propertiesGrid'];
+            elements.forEach(id => {
+                const element = document.getElementById(id);
+                log(`${id}: ${element ? 'FOUND' : 'NOT FOUND'}`);
+            });
+        }
+        
+        // Test event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            log('DOM loaded');
+            
+            const applyFiltersBtn = document.getElementById('applyFilters');
+            if (applyFiltersBtn) {
+                applyFiltersBtn.addEventListener('click', function() {
+                    log('Apply Filters button clicked!');
+                });
+            }
+            
+            const floatingChatBtn = document.getElementById('floatingChatBtn');
+            if (floatingChatBtn) {
+                floatingChatBtn.addEventListener('click', function() {
+                    log('Floating Chat button clicked!');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

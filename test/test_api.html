@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 3px;
+            white-space: pre-wrap;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Test Page</h1>
+    <p>Test various API endpoints and functionality</p>
+    
+    <!-- Test travel planning endpoint -->
+    <div class="test-section">
+        <h3>Test Travel Planning Endpoint</h3>
+        <p>Test the travel planning API endpoint</p>
+        
+        <button class="test-button" onclick="testTravelPlanning()">Test Travel Planning</button>
+        <button class="test-button" onclick="testSessionRetrieval()">Test Session Retrieval</button>
+        <button class="test-button" onclick="testSessionDeletion()">Test Session Deletion</button>
+        
+        <div id="travelPlanningResult" class="result"></div>
+    </div>
+    
+    <!-- Test property generation endpoint -->
+    <div class="test-section">
+        <h3>Test Property Generation Endpoint</h3>
+        <p>Test the property generation API endpoint</p>
+        
+        <button class="test-button" onclick="testPropertyGeneration()">Test Property Generation</button>
+        
+        <div id="propertyGenerationResult" class="result"></div>
+    </div>
+    
+    <!-- Test chat endpoint -->
+    <div class="test-section">
+        <h3>Test Chat Endpoint</h3>
+        <p>Test the chat API endpoint</p>
+        
+        <button class="test-button" onclick="testChat()">Test Chat</button>
+        
+        <div id="chatResult" class="result"></div>
+    </div>
+    
+    <script>
+        // Test travel planning endpoint
+        async function testTravelPlanning() {
+            const resultDiv = document.getElementById('travelPlanningResult');
+            resultDiv.innerHTML = 'Testing...';
+            resultDiv.className = 'result';
+            
+            try {
+                const response = await fetch('/api/travel_planning', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: 'I want to plan a trip to Toronto',
+                        session_id: 'test_session_' + Date.now()
+                    })
+                });
+                
+                const data = await response.json();
+                resultDiv.innerHTML = JSON.stringify(data, null, 2);
+                resultDiv.className = 'result success';
+            } catch (error) {
+                resultDiv.innerHTML = 'Error: ' + error.message;
+                resultDiv.className = 'result error';
+            }
+        }
+        
+        // Test session retrieval
+        async function testSessionRetrieval() {
+            const resultDiv = document.getElementById('travelPlanningResult');
+            resultDiv.innerHTML = 'Testing session retrieval...';
+            resultDiv.className = 'result';
+            
+            try {
+                const response = await fetch('/api/travel_planning/session/test_session_123');
+                const data = await response.json();
+                resultDiv.innerHTML = 'Session retrieved:\n' + JSON.stringify(data, null, 2);
+                resultDiv.className = 'result success';
+            } catch (error) {
+                resultDiv.innerHTML = 'Error: ' + error.message;
+                resultDiv.className = 'result error';
+            }
+        }
+        
+        // Test session deletion
+        async function testSessionDeletion() {
+            const resultDiv = document.getElementById('travelPlanningResult');
+            resultDiv.innerHTML = 'Testing session deletion...';
+            resultDiv.className = 'result';
+            
+            try {
+                const response = await fetch('/api/travel_planning/session/test_session_123', {
+                    method: 'DELETE'
+                });
+                const data = await response.json();
+                resultDiv.innerHTML = 'Session deleted:\n' + JSON.stringify(data, null, 2);
+                resultDiv.className = 'result success';
+            } catch (error) {
+                resultDiv.innerHTML = 'Error: ' + error.message;
+                resultDiv.className = 'result error';
+            }
+        }
+        
+        // Test property generation endpoint
+        async function testPropertyGeneration() {
+            const resultDiv = document.getElementById('propertyGenerationResult');
+            resultDiv.innerHTML = 'Testing...';
+            resultDiv.className = 'result';
+            
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: 'Please generate some random property JSON files'
+                    })
+                });
+                
+                const data = await response.json();
+                resultDiv.innerHTML = JSON.stringify(data, null, 2);
+                resultDiv.className = 'result success';
+            } catch (error) {
+                resultDiv.innerHTML = 'Error: ' + error.message;
+                resultDiv.className = 'result error';
+            }
+        }
+        
+        // Test chat endpoint
+        async function testChat() {
+            const resultDiv = document.getElementById('chatResult');
+            resultDiv.innerHTML = 'Testing...';
+            resultDiv.className = 'result';
+            
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: 'Hello, how are you?'
+                    })
+                });
+                
+                const data = await response.json();
+                resultDiv.innerHTML = JSON.stringify(data, null, 2);
+                resultDiv.className = 'result success';
+            } catch (error) {
+                resultDiv.innerHTML = 'Error: ' + error.message;
+                resultDiv.className = 'result error';
+            }
+        }
+    </script>
+</body>
+</html>

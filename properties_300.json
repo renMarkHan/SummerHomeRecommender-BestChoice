@@ -1,0 +1,2102 @@
+[
+    {
+        "location": "1033 Howe St, Edmonton, AB",
+        "type": "Townhouse",
+        "nightly_price": 162,
+        "features": "Air conditioning,Gym,WiFi,Kitchen",
+        "tags": "Close to transit,Family friendly"
+    },
+    {
+        "location": "3474 Lawrence Ave E, Vancouver, BC",
+        "type": "Villa",
+        "nightly_price": 310,
+        "features": "Fireplace,Elevator,Concierge,Backyard",
+        "tags": "Cozy,Near park"
+    },
+    {
+        "location": "1755 Dundas St W, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 246,
+        "features": "Backyard,Elevator,Concierge",
+        "tags": "Suburban,Entertainment district"
+    },
+    {
+        "location": "1203 Lawrence Ave E, Calgary, AB",
+        "type": "Villa",
+        "nightly_price": 447,
+        "features": "WiFi,Backyard,Heating,Fireplace",
+        "tags": "Historic building,Luxury,Trendy neighborhood"
+    },
+    {
+        "location": "2522 Broadway W, Victoria, BC",
+        "type": "Townhouse",
+        "nightly_price": 224,
+        "features": "Fireplace,Heating,Pool,Air conditioning,Parking,Balcony",
+        "tags": "Entertainment district,Cultural district"
+    },
+    {
+        "location": "3853 Sherbrooke St W, Quebec City, QC",
+        "type": "House",
+        "nightly_price": 197,
+        "features": "Pool,Parking,Concierge,Balcony,Kitchen,Backyard",
+        "tags": "Quiet street,Suburban,Lakeside"
+    },
+    {
+        "location": "2281 Bay St, Montreal, QC",
+        "type": "Villa",
+        "nightly_price": 265,
+        "features": "Heating,Gym,Pool",
+        "tags": "Cozy,Tree-lined street,Family friendly,Walkable"
+    },
+    {
+        "location": "2451 Queen St E, Toronto, ON",
+        "type": "Villa",
+        "nightly_price": 328,
+        "features": "Backyard,Balcony,Air conditioning",
+        "tags": "Trendy neighborhood,Family friendly,Near park,Tree-lined street"
+    },
+    {
+        "location": "1092 Georgia St, Montreal, QC",
+        "type": "Cabin",
+        "nightly_price": 101,
+        "features": "Parking,Elevator,Air conditioning,Fireplace,WiFi",
+        "tags": "Trendy neighborhood,Close to transit,Luxury,Family friendly"
+    },
+    {
+        "location": "3668 Sherbrooke St W, Montreal, QC",
+        "type": "House",
+        "nightly_price": 162,
+        "features": "WiFi,Laundry,Kitchen",
+        "tags": "Trendy neighborhood,Suburban,Modern building,Near park"
+    },
+    {
+        "location": "156 Lawrence Ave E, Victoria, BC",
+        "type": "House",
+        "nightly_price": 223,
+        "features": "Concierge,Air conditioning,Parking,Kitchen,Pool",
+        "tags": "Walkable,Close to transit,Suburban,Entertainment district"
+    },
+    {
+        "location": "1925 College St, Montreal, QC",
+        "type": "House",
+        "nightly_price": 192,
+        "features": "Fireplace,Heating,Concierge,Gym",
+        "tags": "Tree-lined street,Entertainment district,Family friendly"
+    },
+    {
+        "location": "2786 Broadway W, Vancouver, BC",
+        "type": "Villa",
+        "nightly_price": 283,
+        "features": "Balcony,Kitchen,Laundry",
+        "tags": "Close to transit,Scenic view,Cultural district"
+    },
+    {
+        "location": "2338 Robson St, Ottawa, ON",
+        "type": "Condo",
+        "nightly_price": 223,
+        "features": "Elevator,Concierge,Air conditioning,Balcony,WiFi",
+        "tags": "Near lake,Historic building,Walkable"
+    },
+    {
+        "location": "1379 Keele St, Toronto, ON",
+        "type": "Apartment",
+        "nightly_price": 152,
+        "features": "WiFi,Kitchen,Laundry,Parking",
+        "tags": "Cozy,Walkable"
+    },
+    {
+        "location": "286 Keele St, Montreal, QC",
+        "type": "House",
+        "nightly_price": 300,
+        "features": "Concierge,Pool,Air conditioning",
+        "tags": "Trendy neighborhood,Cozy,Family friendly"
+    },
+    {
+        "location": "1825 Queen St E, Winnipeg, MB",
+        "type": "Cabin",
+        "nightly_price": 138,
+        "features": "WiFi,Gym,Fireplace,Balcony",
+        "tags": "Financial district,Trendy neighborhood,Modern building,Suburban"
+    },
+    {
+        "location": "2247 Peel St, Montreal, QC",
+        "type": "Townhouse",
+        "nightly_price": 182,
+        "features": "Balcony,Pool,Heating,Elevator,WiFi",
+        "tags": "Near lake,Close to transit,Cozy"
+    },
+    {
+        "location": "2035 Richmond St W, Vancouver, BC",
+        "type": "Apartment",
+        "nightly_price": 127,
+        "features": "Pool,Kitchen,Concierge",
+        "tags": "Near park,Modern building,Near lake"
+    },
+    {
+        "location": "2815 Keele St, Vancouver, BC",
+        "type": "House",
+        "nightly_price": 197,
+        "features": "Heating,Parking,WiFi,Pool",
+        "tags": "Quiet street,Walkable"
+    },
+    {
+        "location": "1966 Richmond St W, Quebec City, QC",
+        "type": "House",
+        "nightly_price": 275,
+        "features": "Fireplace,Concierge,WiFi,Laundry",
+        "tags": "Entertainment district,Cozy"
+    },
+    {
+        "location": "164 Granville St, Ottawa, ON",
+        "type": "Apartment",
+        "nightly_price": 102,
+        "features": "Heating,Parking,Backyard,Fireplace,WiFi,Balcony",
+        "tags": "Family friendly,Suburban,Close to transit"
+    },
+    {
+        "location": "2458 Adelaide St E, Victoria, BC",
+        "type": "Townhouse",
+        "nightly_price": 155,
+        "features": "Fireplace,WiFi,Parking,Balcony",
+        "tags": "Scenic view,Lakeside,Luxury,Modern building"
+    },
+    {
+        "location": "3274 University Ave, Quebec City, QC",
+        "type": "Condo",
+        "nightly_price": 173,
+        "features": "Balcony,WiFi,Heating,Backyard,Air conditioning",
+        "tags": "Financial district,Scenic view,Trendy neighborhood"
+    },
+    {
+        "location": "123 Bay St, Winnipeg, MB",
+        "type": "Condo",
+        "nightly_price": 184,
+        "features": "Parking,Concierge,Elevator,Pool,Balcony,Air conditioning",
+        "tags": "Cultural district,Close to transit,Walkable,Quiet street"
+    },
+    {
+        "location": "3735 St Clair Ave W, Toronto, ON",
+        "type": "Townhouse",
+        "nightly_price": 235,
+        "features": "Gym,Kitchen,Laundry",
+        "tags": "Close to transit,Cultural district,Suburban"
+    },
+    {
+        "location": "1118 Georgia St, Ottawa, ON",
+        "type": "Condo",
+        "nightly_price": 186,
+        "features": "Kitchen,Balcony,Concierge,Pool,Elevator",
+        "tags": "Historic building,Luxury,Financial district,Cultural district"
+    },
+    {
+        "location": "2579 College St, Montreal, QC",
+        "type": "Apartment",
+        "nightly_price": 104,
+        "features": "Gym,Concierge,Parking",
+        "tags": "Modern building,Quiet street"
+    },
+    {
+        "location": "3515 Richmond St W, Vancouver, BC",
+        "type": "House",
+        "nightly_price": 155,
+        "features": "Parking,Elevator,Pool,Heating,Kitchen,WiFi",
+        "tags": "Tree-lined street,Lakeside,Cultural district,Suburban"
+    },
+    {
+        "location": "2359 University Ave, Halifax, NS",
+        "type": "Apartment",
+        "nightly_price": 154,
+        "features": "Kitchen,Fireplace,Parking,Backyard,Air conditioning,Gym",
+        "tags": "Cozy,Trendy neighborhood,Suburban,Family friendly"
+    },
+    {
+        "location": "3782 Adelaide St E, Calgary, AB",
+        "type": "Apartment",
+        "nightly_price": 170,
+        "features": "WiFi,Air conditioning,Elevator",
+        "tags": "Luxury,Suburban"
+    },
+    {
+        "location": "509 St Clair Ave W, Vancouver, BC",
+        "type": "Townhouse",
+        "nightly_price": 166,
+        "features": "Pool,Kitchen,Air conditioning",
+        "tags": "Cultural district,Luxury,Historic building"
+    },
+    {
+        "location": "1359 Robson St, Quebec City, QC",
+        "type": "Condo",
+        "nightly_price": 157,
+        "features": "Laundry,Elevator,Gym,WiFi,Fireplace",
+        "tags": "Family friendly,Cultural district"
+    },
+    {
+        "location": "204 Spadina Ave, Halifax, NS",
+        "type": "Townhouse",
+        "nightly_price": 138,
+        "features": "Elevator,Kitchen,Gym,Fireplace,Heating",
+        "tags": "Cultural district,Tree-lined street"
+    },
+    {
+        "location": "2543 College St, Toronto, ON",
+        "type": "Apartment",
+        "nightly_price": 166,
+        "features": "Concierge,Heating,Pool,Air conditioning,Gym",
+        "tags": "Trendy neighborhood,Entertainment district,Walkable"
+    },
+    {
+        "location": "3663 Bay St, Calgary, AB",
+        "type": "Condo",
+        "nightly_price": 201,
+        "features": "WiFi,Gym,Concierge,Heating,Pool",
+        "tags": "Cozy,Downtown,Walkable"
+    },
+    {
+        "location": "3823 Jarvis St, Calgary, AB",
+        "type": "Townhouse",
+        "nightly_price": 226,
+        "features": "Concierge,Pool,Gym,Laundry",
+        "tags": "Historic building,Scenic view,Trendy neighborhood"
+    },
+    {
+        "location": "2026 Eglinton Ave W, Halifax, NS",
+        "type": "House",
+        "nightly_price": 287,
+        "features": "Heating,Kitchen,Gym,WiFi,Parking,Concierge",
+        "tags": "Downtown,Suburban"
+    },
+    {
+        "location": "2530 Queen St E, Ottawa, ON",
+        "type": "Townhouse",
+        "nightly_price": 178,
+        "features": "Balcony,Backyard,Fireplace,Gym,Parking,Laundry",
+        "tags": "Modern building,Downtown,Financial district"
+    },
+    {
+        "location": "950 Bathurst St, Quebec City, QC",
+        "type": "House",
+        "nightly_price": 275,
+        "features": "Gym,Concierge,Laundry,Fireplace,Elevator",
+        "tags": "Walkable,Scenic view,Tree-lined street"
+    },
+    {
+        "location": "3763 Queen St E, Victoria, BC",
+        "type": "Cabin",
+        "nightly_price": 106,
+        "features": "Kitchen,Pool,Balcony,Parking,Backyard",
+        "tags": "Family friendly,Luxury"
+    },
+    {
+        "location": "3841 King St W, Winnipeg, MB",
+        "type": "Townhouse",
+        "nightly_price": 224,
+        "features": "Fireplace,WiFi,Air conditioning,Heating,Laundry,Kitchen",
+        "tags": "Cultural district,Entertainment district,Luxury"
+    },
+    {
+        "location": "1515 Queen St E, Victoria, BC",
+        "type": "House",
+        "nightly_price": 284,
+        "features": "Pool,Gym,Air conditioning,Backyard,WiFi,Parking",
+        "tags": "Suburban,Financial district,Historic building,Cozy"
+    },
+    {
+        "location": "672 Peel St, Ottawa, ON",
+        "type": "Villa",
+        "nightly_price": 417,
+        "features": "Pool,WiFi,Air conditioning,Parking,Balcony",
+        "tags": "Close to transit,Lakeside,Family friendly"
+    },
+    {
+        "location": "642 Dundas St W, Quebec City, QC",
+        "type": "Condo",
+        "nightly_price": 160,
+        "features": "Concierge,Heating,Pool,Parking",
+        "tags": "Modern building,Quiet street"
+    },
+    {
+        "location": "1974 College St, Toronto, ON",
+        "type": "House",
+        "nightly_price": 189,
+        "features": "Air conditioning,Kitchen,Heating,Pool,Balcony",
+        "tags": "Near park,Scenic view,Suburban"
+    },
+    {
+        "location": "1491 Queen St E, Montreal, QC",
+        "type": "House",
+        "nightly_price": 175,
+        "features": "WiFi,Parking,Gym",
+        "tags": "Cultural district,Close to transit"
+    },
+    {
+        "location": "844 Richmond St W, Calgary, AB",
+        "type": "Condo",
+        "nightly_price": 218,
+        "features": "Laundry,Elevator,Gym,Backyard",
+        "tags": "Historic building,Near park,Walkable,Family friendly"
+    },
+    {
+        "location": "2377 University Ave, Winnipeg, MB",
+        "type": "Townhouse",
+        "nightly_price": 155,
+        "features": "Fireplace,Gym,Pool",
+        "tags": "Downtown,Tree-lined street"
+    },
+    {
+        "location": "2424 Robson St, Halifax, NS",
+        "type": "Apartment",
+        "nightly_price": 156,
+        "features": "Gym,Elevator,Fireplace,Kitchen",
+        "tags": "Trendy neighborhood,Cultural district,Walkable,Entertainment district"
+    },
+    {
+        "location": "892 Howe St, Montreal, QC",
+        "type": "Townhouse",
+        "nightly_price": 197,
+        "features": "Air conditioning,Fireplace,Backyard,Elevator",
+        "tags": "Family friendly,Close to transit,Entertainment district,Luxury"
+    },
+    {
+        "location": "2611 Eglinton Ave W, Ottawa, ON",
+        "type": "Villa",
+        "nightly_price": 412,
+        "features": "Backyard,Pool,Parking,Kitchen,WiFi",
+        "tags": "Financial district,Downtown,Suburban,Tree-lined street"
+    },
+    {
+        "location": "1975 Spadina Ave, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 130,
+        "features": "Balcony,Laundry,WiFi",
+        "tags": "Downtown,Scenic view"
+    },
+    {
+        "location": "1536 Bloor St W, Toronto, ON",
+        "type": "Apartment",
+        "nightly_price": 111,
+        "features": "Elevator,Air conditioning,Backyard",
+        "tags": "Historic building,Downtown,Entertainment district,Lakeside"
+    },
+    {
+        "location": "489 Spadina Ave, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 196,
+        "features": "WiFi,Gym,Elevator,Fireplace",
+        "tags": "Lakeside,Tree-lined street,Near lake"
+    },
+    {
+        "location": "3521 Spadina Ave, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 211,
+        "features": "Gym,Fireplace,Air conditioning,Backyard,Elevator",
+        "tags": "Lakeside,Scenic view,Family friendly"
+    },
+    {
+        "location": "312 Bloor St W, Winnipeg, MB",
+        "type": "Apartment",
+        "nightly_price": 156,
+        "features": "Pool,WiFi,Fireplace",
+        "tags": "Close to transit,Near park"
+    },
+    {
+        "location": "799 Eglinton Ave W, Winnipeg, MB",
+        "type": "House",
+        "nightly_price": 192,
+        "features": "Fireplace,Gym,WiFi",
+        "tags": "Near park,Cultural district,Financial district"
+    },
+    {
+        "location": "1316 College St, Victoria, BC",
+        "type": "Cabin",
+        "nightly_price": 161,
+        "features": "Concierge,Heating,Air conditioning",
+        "tags": "Entertainment district,Tree-lined street,Suburban,Near lake"
+    },
+    {
+        "location": "3086 Wellington St, Calgary, AB",
+        "type": "Townhouse",
+        "nightly_price": 221,
+        "features": "Pool,Gym,Kitchen",
+        "tags": "Trendy neighborhood,Historic building,Downtown,Near lake"
+    },
+    {
+        "location": "3346 St Clair Ave W, Edmonton, AB",
+        "type": "Townhouse",
+        "nightly_price": 209,
+        "features": "Pool,Backyard,Air conditioning,Concierge,Fireplace,Elevator",
+        "tags": "Lakeside,Luxury,Walkable"
+    },
+    {
+        "location": "1779 Saint Catherine St E, Winnipeg, MB",
+        "type": "Townhouse",
+        "nightly_price": 235,
+        "features": "Heating,Balcony,Gym,Parking,Kitchen",
+        "tags": "Quiet street,Tree-lined street,Trendy neighborhood"
+    },
+    {
+        "location": "2192 Dundas St W, Toronto, ON",
+        "type": "Townhouse",
+        "nightly_price": 174,
+        "features": "Concierge,Elevator,Backyard,Air conditioning",
+        "tags": "Cozy,Suburban"
+    },
+    {
+        "location": "1976 Lawrence Ave E, Toronto, ON",
+        "type": "Villa",
+        "nightly_price": 386,
+        "features": "Fireplace,Balcony,Parking,Laundry",
+        "tags": "Lakeside,Tree-lined street,Close to transit,Near lake"
+    },
+    {
+        "location": "524 Dundas St W, Victoria, BC",
+        "type": "Villa",
+        "nightly_price": 453,
+        "features": "Parking,Elevator,Laundry,WiFi,Heating",
+        "tags": "Tree-lined street,Family friendly,Cozy"
+    },
+    {
+        "location": "1208 Adelaide St E, Victoria, BC",
+        "type": "Condo",
+        "nightly_price": 231,
+        "features": "Kitchen,Concierge,Gym,Balcony,Elevator,Parking",
+        "tags": "Close to transit,Quiet street,Luxury,Scenic view"
+    },
+    {
+        "location": "3556 Howe St, Winnipeg, MB",
+        "type": "Villa",
+        "nightly_price": 386,
+        "features": "Heating,Air conditioning,Gym,Backyard,Concierge",
+        "tags": "Entertainment district,Walkable,Modern building"
+    },
+    {
+        "location": "1871 Broadway W, Toronto, ON",
+        "type": "Townhouse",
+        "nightly_price": 145,
+        "features": "Heating,Pool,Balcony,Laundry",
+        "tags": "Near park,Family friendly,Tree-lined street"
+    },
+    {
+        "location": "369 Keele St, Vancouver, BC",
+        "type": "House",
+        "nightly_price": 203,
+        "features": "Backyard,Air conditioning,Concierge,Elevator",
+        "tags": "Near lake,Historic building,Luxury,Tree-lined street"
+    },
+    {
+        "location": "1983 Georgia St, Victoria, BC",
+        "type": "Townhouse",
+        "nightly_price": 158,
+        "features": "Balcony,Gym,Heating,Fireplace,Pool",
+        "tags": "Family friendly,Lakeside,Quiet street,Suburban"
+    },
+    {
+        "location": "2146 Bloor St W, Toronto, ON",
+        "type": "Apartment",
+        "nightly_price": 185,
+        "features": "Kitchen,Fireplace,Balcony,Gym",
+        "tags": "Tree-lined street,Modern building"
+    },
+    {
+        "location": "3526 King St W, Halifax, NS",
+        "type": "House",
+        "nightly_price": 227,
+        "features": "Backyard,Parking,Gym",
+        "tags": "Scenic view,Historic building"
+    },
+    {
+        "location": "2813 Queen St E, Halifax, NS",
+        "type": "House",
+        "nightly_price": 150,
+        "features": "Balcony,Concierge,Gym,Parking,Backyard,Laundry",
+        "tags": "Near lake,Scenic view"
+    },
+    {
+        "location": "2408 Dundas St W, Winnipeg, MB",
+        "type": "Cabin",
+        "nightly_price": 173,
+        "features": "Parking,WiFi,Air conditioning,Pool,Concierge",
+        "tags": "Scenic view,Financial district"
+    },
+    {
+        "location": "1185 Broadway W, Toronto, ON",
+        "type": "Apartment",
+        "nightly_price": 153,
+        "features": "Air conditioning,Backyard,Balcony,Kitchen,Fireplace",
+        "tags": "Trendy neighborhood,Luxury,Near park"
+    },
+    {
+        "location": "1072 Leslie St, Edmonton, AB",
+        "type": "Cabin",
+        "nightly_price": 157,
+        "features": "Concierge,Backyard,Balcony,Parking,Fireplace,Gym",
+        "tags": "Historic building,Family friendly,Near park"
+    },
+    {
+        "location": "417 Main St, Halifax, NS",
+        "type": "Apartment",
+        "nightly_price": 172,
+        "features": "Fireplace,Kitchen,Heating",
+        "tags": "Near park,Entertainment district,Luxury,Cozy"
+    },
+    {
+        "location": "2707 Sherbrooke St W, Ottawa, ON",
+        "type": "Condo",
+        "nightly_price": 250,
+        "features": "Concierge,Balcony,Kitchen,Laundry,Elevator",
+        "tags": "Near park,Walkable,Tree-lined street"
+    },
+    {
+        "location": "3131 College St, Vancouver, BC",
+        "type": "House",
+        "nightly_price": 254,
+        "features": "Backyard,Gym,Laundry,WiFi,Air conditioning",
+        "tags": "Lakeside,Family friendly"
+    },
+    {
+        "location": "170 King St W, Montreal, QC",
+        "type": "House",
+        "nightly_price": 238,
+        "features": "Backyard,WiFi,Parking,Laundry",
+        "tags": "Family friendly,Walkable"
+    },
+    {
+        "location": "3102 Bay St, Quebec City, QC",
+        "type": "Townhouse",
+        "nightly_price": 177,
+        "features": "WiFi,Heating,Air conditioning,Balcony,Laundry",
+        "tags": "Close to transit,Tree-lined street,Scenic view,Near park"
+    },
+    {
+        "location": "1045 Peel St, Edmonton, AB",
+        "type": "House",
+        "nightly_price": 182,
+        "features": "Kitchen,Pool,Air conditioning",
+        "tags": "Downtown,Family friendly,Lakeside,Scenic view"
+    },
+    {
+        "location": "2074 Lawrence Ave E, Montreal, QC",
+        "type": "Cabin",
+        "nightly_price": 170,
+        "features": "Air conditioning,Balcony,Concierge,Gym",
+        "tags": "Entertainment district,Luxury,Downtown"
+    },
+    {
+        "location": "1239 Georgia St, Halifax, NS",
+        "type": "Cabin",
+        "nightly_price": 127,
+        "features": "Pool,Concierge,Parking",
+        "tags": "Near lake,Close to transit,Historic building,Lakeside"
+    },
+    {
+        "location": "737 Keele St, Quebec City, QC",
+        "type": "Townhouse",
+        "nightly_price": 221,
+        "features": "Air conditioning,Pool,Gym,Backyard,Elevator",
+        "tags": "Luxury,Cultural district,Near lake,Historic building"
+    },
+    {
+        "location": "966 Wellington St, Quebec City, QC",
+        "type": "House",
+        "nightly_price": 242,
+        "features": "Heating,Laundry,Air conditioning,Elevator,Pool",
+        "tags": "Near park,Downtown,Quiet street"
+    },
+    {
+        "location": "2423 College St, Vancouver, BC",
+        "type": "House",
+        "nightly_price": 239,
+        "features": "Laundry,Pool,Air conditioning,Parking",
+        "tags": "Tree-lined street,Trendy neighborhood,Historic building"
+    },
+    {
+        "location": "3684 Eglinton Ave W, Edmonton, AB",
+        "type": "Cabin",
+        "nightly_price": 125,
+        "features": "Backyard,Kitchen,Pool,WiFi,Elevator",
+        "tags": "Trendy neighborhood,Walkable,Quiet street"
+    },
+    {
+        "location": "1469 Dundas St W, Toronto, ON",
+        "type": "Apartment",
+        "nightly_price": 132,
+        "features": "Elevator,WiFi,Air conditioning,Backyard,Concierge,Kitchen",
+        "tags": "Near lake,Downtown,Trendy neighborhood"
+    },
+    {
+        "location": "336 Granville St, Ottawa, ON",
+        "type": "Townhouse",
+        "nightly_price": 183,
+        "features": "Air conditioning,Kitchen,Parking,Balcony",
+        "tags": "Historic building,Family friendly"
+    },
+    {
+        "location": "2743 Broadway W, Halifax, NS",
+        "type": "Apartment",
+        "nightly_price": 124,
+        "features": "Concierge,Elevator,Kitchen",
+        "tags": "Family friendly,Quiet street"
+    },
+    {
+        "location": "2804 Bathurst St, Victoria, BC",
+        "type": "Condo",
+        "nightly_price": 157,
+        "features": "Laundry,Elevator,Parking",
+        "tags": "Cozy,Suburban,Close to transit,Walkable"
+    },
+    {
+        "location": "597 Keele St, Toronto, ON",
+        "type": "House",
+        "nightly_price": 226,
+        "features": "Fireplace,Parking,Balcony,Laundry",
+        "tags": "Walkable,Close to transit,Family friendly"
+    },
+    {
+        "location": "2463 King St W, Halifax, NS",
+        "type": "Townhouse",
+        "nightly_price": 137,
+        "features": "Elevator,Gym,WiFi,Laundry,Backyard",
+        "tags": "Tree-lined street,Suburban,Modern building"
+    },
+    {
+        "location": "1403 Georgia St, Calgary, AB",
+        "type": "Condo",
+        "nightly_price": 250,
+        "features": "Laundry,Parking,Fireplace,Pool",
+        "tags": "Near park,Quiet street,Tree-lined street"
+    },
+    {
+        "location": "1844 Saint Catherine St E, Vancouver, BC",
+        "type": "Villa",
+        "nightly_price": 454,
+        "features": "Heating,WiFi,Parking,Elevator,Air conditioning,Laundry",
+        "tags": "Near park,Historic building,Cozy"
+    },
+    {
+        "location": "1179 Bathurst St, Vancouver, BC",
+        "type": "Apartment",
+        "nightly_price": 193,
+        "features": "Gym,Air conditioning,Pool,Backyard",
+        "tags": "Family friendly,Near park"
+    },
+    {
+        "location": "1392 Broadway W, Toronto, ON",
+        "type": "House",
+        "nightly_price": 260,
+        "features": "Fireplace,Air conditioning,Backyard,Balcony,Pool,Gym",
+        "tags": "Walkable,Financial district"
+    },
+    {
+        "location": "1158 Sherbrooke St W, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 189,
+        "features": "Heating,Backyard,Gym,Concierge",
+        "tags": "Lakeside,Near park"
+    },
+    {
+        "location": "739 Adelaide St E, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 192,
+        "features": "Balcony,Backyard,Heating,Pool,Elevator,Kitchen",
+        "tags": "Walkable,Family friendly,Lakeside"
+    },
+    {
+        "location": "438 Wellington St, Calgary, AB",
+        "type": "Villa",
+        "nightly_price": 302,
+        "features": "Air conditioning,Gym,WiFi,Balcony,Concierge",
+        "tags": "Cultural district,Walkable"
+    },
+    {
+        "location": "3363 Ossington Ave, Halifax, NS",
+        "type": "Cabin",
+        "nightly_price": 149,
+        "features": "Kitchen,Backyard,Parking,Fireplace",
+        "tags": "Near lake,Historic building,Close to transit,Near park"
+    },
+    {
+        "location": "1951 Granville St, Montreal, QC",
+        "type": "Apartment",
+        "nightly_price": 124,
+        "features": "Concierge,Heating,Laundry,Fireplace,Kitchen,Elevator",
+        "tags": "Close to transit,Walkable,Trendy neighborhood,Scenic view"
+    },
+    {
+        "location": "3387 Queen St E, Montreal, QC",
+        "type": "Villa",
+        "nightly_price": 349,
+        "features": "Backyard,Pool,Laundry,WiFi",
+        "tags": "Modern building,Near lake"
+    },
+    {
+        "location": "2704 Peel St, Vancouver, BC",
+        "type": "Villa",
+        "nightly_price": 267,
+        "features": "Pool,Concierge,Fireplace,WiFi,Kitchen",
+        "tags": "Near park,Scenic view,Downtown"
+    },
+    {
+        "location": "2658 Bloor St W, Vancouver, BC",
+        "type": "Cabin",
+        "nightly_price": 117,
+        "features": "Kitchen,Pool,Balcony",
+        "tags": "Family friendly,Downtown,Cozy,Close to transit"
+    },
+    {
+        "location": "3557 Eglinton Ave W, Halifax, NS",
+        "type": "Townhouse",
+        "nightly_price": 131,
+        "features": "Laundry,WiFi,Fireplace,Pool",
+        "tags": "Suburban,Close to transit"
+    },
+    {
+        "location": "2589 Robson St, Halifax, NS",
+        "type": "Cabin",
+        "nightly_price": 149,
+        "features": "Fireplace,Pool,Parking",
+        "tags": "Close to transit,Near lake,Financial district,Tree-lined street"
+    },
+    {
+        "location": "113 Broadway W, Toronto, ON",
+        "type": "Cabin",
+        "nightly_price": 131,
+        "features": "Elevator,Kitchen,Air conditioning,WiFi,Pool",
+        "tags": "Luxury,Trendy neighborhood"
+    },
+    {
+        "location": "254 Broadway W, Halifax, NS",
+        "type": "Cabin",
+        "nightly_price": 147,
+        "features": "WiFi,Air conditioning,Fireplace,Pool,Kitchen",
+        "tags": "Near lake,Suburban,Close to transit"
+    },
+    {
+        "location": "3835 Peel St, Victoria, BC",
+        "type": "Apartment",
+        "nightly_price": 104,
+        "features": "Laundry,Heating,Parking,Kitchen",
+        "tags": "Walkable,Family friendly,Cultural district,Scenic view"
+    },
+    {
+        "location": "2564 St Clair Ave W, Winnipeg, MB",
+        "type": "Villa",
+        "nightly_price": 450,
+        "features": "Balcony,Elevator,Pool",
+        "tags": "Downtown,Near lake,Cultural district"
+    },
+    {
+        "location": "3142 Bathurst St, Halifax, NS",
+        "type": "Villa",
+        "nightly_price": 357,
+        "features": "Gym,Parking,Balcony",
+        "tags": "Financial district,Scenic view,Family friendly,Quiet street"
+    },
+    {
+        "location": "1493 Adelaide St E, Toronto, ON",
+        "type": "Townhouse",
+        "nightly_price": 180,
+        "features": "Concierge,Laundry,Heating,WiFi,Gym,Fireplace",
+        "tags": "Financial district,Entertainment district"
+    },
+    {
+        "location": "1963 Sherbrooke St W, Calgary, AB",
+        "type": "Villa",
+        "nightly_price": 468,
+        "features": "Balcony,Gym,Kitchen",
+        "tags": "Modern building,Trendy neighborhood,Historic building"
+    },
+    {
+        "location": "1346 Saint Catherine St E, Montreal, QC",
+        "type": "Villa",
+        "nightly_price": 366,
+        "features": "Concierge,Parking,Heating,Kitchen,Fireplace,Pool",
+        "tags": "Near lake,Trendy neighborhood,Historic building,Entertainment district"
+    },
+    {
+        "location": "472 Dundas St W, Montreal, QC",
+        "type": "Townhouse",
+        "nightly_price": 249,
+        "features": "Gym,Fireplace,Backyard,Parking,Kitchen",
+        "tags": "Modern building,Family friendly,Trendy neighborhood"
+    },
+    {
+        "location": "1866 Ossington Ave, Victoria, BC",
+        "type": "House",
+        "nightly_price": 203,
+        "features": "Parking,Elevator,Backyard,Heating,Fireplace,Kitchen",
+        "tags": "Tree-lined street,Family friendly"
+    },
+    {
+        "location": "1823 Dundas St W, Halifax, NS",
+        "type": "House",
+        "nightly_price": 287,
+        "features": "Fireplace,WiFi,Kitchen",
+        "tags": "Suburban,Scenic view,Downtown,Modern building"
+    },
+    {
+        "location": "1439 Broadway W, Montreal, QC",
+        "type": "Apartment",
+        "nightly_price": 103,
+        "features": "Pool,Concierge,Heating,Laundry",
+        "tags": "Luxury,Near lake,Suburban"
+    },
+    {
+        "location": "964 Bloor St W, Edmonton, AB",
+        "type": "Villa",
+        "nightly_price": 269,
+        "features": "Elevator,Air conditioning,Gym,Balcony,Concierge,Parking",
+        "tags": "Modern building,Quiet street,Tree-lined street"
+    },
+    {
+        "location": "2622 Lawrence Ave E, Toronto, ON",
+        "type": "Villa",
+        "nightly_price": 279,
+        "features": "Laundry,Fireplace,Heating",
+        "tags": "Financial district,Cozy,Downtown,Lakeside"
+    },
+    {
+        "location": "3178 Lawrence Ave E, Winnipeg, MB",
+        "type": "House",
+        "nightly_price": 295,
+        "features": "Laundry,Air conditioning,Gym",
+        "tags": "Scenic view,Walkable"
+    },
+    {
+        "location": "1058 Sherbrooke St W, Vancouver, BC",
+        "type": "Villa",
+        "nightly_price": 307,
+        "features": "WiFi,Laundry,Fireplace,Elevator,Air conditioning,Backyard",
+        "tags": "Entertainment district,Close to transit,Historic building,Tree-lined street"
+    },
+    {
+        "location": "713 Lawrence Ave E, Calgary, AB",
+        "type": "Apartment",
+        "nightly_price": 104,
+        "features": "Heating,Pool,Concierge,Laundry,Elevator",
+        "tags": "Near lake,Entertainment district"
+    },
+    {
+        "location": "1499 Jarvis St, Ottawa, ON",
+        "type": "Condo",
+        "nightly_price": 250,
+        "features": "Pool,Elevator,Kitchen",
+        "tags": "Tree-lined street,Close to transit"
+    },
+    {
+        "location": "1870 Front St W, Ottawa, ON",
+        "type": "Townhouse",
+        "nightly_price": 175,
+        "features": "Concierge,Kitchen,Heating,Gym,Elevator,Balcony",
+        "tags": "Modern building,Suburban"
+    },
+    {
+        "location": "3898 Eglinton Ave W, Victoria, BC",
+        "type": "Apartment",
+        "nightly_price": 158,
+        "features": "Elevator,Concierge,Fireplace",
+        "tags": "Quiet street,Financial district,Close to transit"
+    },
+    {
+        "location": "3896 Keele St, Montreal, QC",
+        "type": "Cabin",
+        "nightly_price": 95,
+        "features": "Kitchen,Air conditioning,Fireplace,Parking",
+        "tags": "Suburban,Close to transit,Walkable,Trendy neighborhood"
+    },
+    {
+        "location": "1546 Sherbrooke St W, Victoria, BC",
+        "type": "Apartment",
+        "nightly_price": 120,
+        "features": "Kitchen,Pool,Elevator,Balcony,WiFi,Air conditioning",
+        "tags": "Cozy,Close to transit"
+    },
+    {
+        "location": "3474 College St, Vancouver, BC",
+        "type": "Apartment",
+        "nightly_price": 138,
+        "features": "Elevator,Heating,Pool,Kitchen,Concierge,Parking",
+        "tags": "Suburban,Scenic view"
+    },
+    {
+        "location": "3456 College St, Halifax, NS",
+        "type": "Villa",
+        "nightly_price": 446,
+        "features": "Air conditioning,WiFi,Laundry,Fireplace,Concierge,Pool",
+        "tags": "Quiet street,Family friendly"
+    },
+    {
+        "location": "499 Lawrence Ave E, Halifax, NS",
+        "type": "Townhouse",
+        "nightly_price": 131,
+        "features": "Elevator,Concierge,Backyard,Laundry,Parking,WiFi",
+        "tags": "Modern building,Cultural district"
+    },
+    {
+        "location": "1078 Robson St, Winnipeg, MB",
+        "type": "Cabin",
+        "nightly_price": 123,
+        "features": "Backyard,Elevator,Parking,Concierge,Fireplace",
+        "tags": "Trendy neighborhood,Modern building,Suburban,Historic building"
+    },
+    {
+        "location": "2938 Keele St, Calgary, AB",
+        "type": "Cabin",
+        "nightly_price": 169,
+        "features": "Elevator,Fireplace,WiFi,Balcony,Backyard",
+        "tags": "Trendy neighborhood,Downtown"
+    },
+    {
+        "location": "3830 Howe St, Quebec City, QC",
+        "type": "Cabin",
+        "nightly_price": 82,
+        "features": "Elevator,Gym,Air conditioning",
+        "tags": "Cozy,Tree-lined street"
+    },
+    {
+        "location": "3242 Wellington St, Quebec City, QC",
+        "type": "Villa",
+        "nightly_price": 425,
+        "features": "Parking,Pool,Gym,Elevator",
+        "tags": "Near lake,Family friendly,Scenic view,Trendy neighborhood"
+    },
+    {
+        "location": "926 Keele St, Ottawa, ON",
+        "type": "Townhouse",
+        "nightly_price": 136,
+        "features": "Fireplace,WiFi,Air conditioning,Pool,Laundry,Kitchen",
+        "tags": "Quiet street,Modern building,Walkable"
+    },
+    {
+        "location": "1542 Adelaide St E, Halifax, NS",
+        "type": "Apartment",
+        "nightly_price": 113,
+        "features": "Pool,Elevator,Heating,Kitchen,Laundry",
+        "tags": "Cultural district,Trendy neighborhood"
+    },
+    {
+        "location": "2340 Eglinton Ave W, Winnipeg, MB",
+        "type": "House",
+        "nightly_price": 205,
+        "features": "Elevator,Concierge,Heating,Fireplace,Balcony",
+        "tags": "Lakeside,Downtown"
+    },
+    {
+        "location": "2212 University Ave, Ottawa, ON",
+        "type": "Cabin",
+        "nightly_price": 153,
+        "features": "Kitchen,Pool,Balcony,Parking,Laundry",
+        "tags": "Close to transit,Modern building,Scenic view"
+    },
+    {
+        "location": "901 University Ave, Winnipeg, MB",
+        "type": "Apartment",
+        "nightly_price": 146,
+        "features": "Elevator,WiFi,Balcony",
+        "tags": "Historic building,Cozy,Downtown"
+    },
+    {
+        "location": "1747 Richmond St W, Quebec City, QC",
+        "type": "Villa",
+        "nightly_price": 395,
+        "features": "Parking,Elevator,Fireplace,WiFi,Balcony,Laundry",
+        "tags": "Close to transit,Downtown,Cultural district"
+    },
+    {
+        "location": "3880 Granville St, Quebec City, QC",
+        "type": "Cabin",
+        "nightly_price": 113,
+        "features": "Elevator,Backyard,Balcony",
+        "tags": "Walkable,Financial district,Luxury,Scenic view"
+    },
+    {
+        "location": "1652 University Ave, Toronto, ON",
+        "type": "Villa",
+        "nightly_price": 291,
+        "features": "Elevator,Concierge,Heating,Backyard,Pool",
+        "tags": "Close to transit,Lakeside,Entertainment district,Trendy neighborhood"
+    },
+    {
+        "location": "3267 Granville St, Calgary, AB",
+        "type": "House",
+        "nightly_price": 213,
+        "features": "Air conditioning,Concierge,Elevator,WiFi",
+        "tags": "Suburban,Family friendly,Scenic view"
+    },
+    {
+        "location": "646 Queen St E, Ottawa, ON",
+        "type": "Cabin",
+        "nightly_price": 109,
+        "features": "Kitchen,Air conditioning,Concierge",
+        "tags": "Modern building,Walkable"
+    },
+    {
+        "location": "3973 Eglinton Ave W, Edmonton, AB",
+        "type": "Cabin",
+        "nightly_price": 163,
+        "features": "Air conditioning,Concierge,Fireplace,Backyard,Parking",
+        "tags": "Tree-lined street,Trendy neighborhood,Suburban"
+    },
+    {
+        "location": "1309 Bloor St W, Quebec City, QC",
+        "type": "House",
+        "nightly_price": 156,
+        "features": "Kitchen,WiFi,Backyard,Balcony,Laundry,Air conditioning",
+        "tags": "Cozy,Tree-lined street,Luxury,Financial district"
+    },
+    {
+        "location": "1749 Adelaide St E, Victoria, BC",
+        "type": "Condo",
+        "nightly_price": 243,
+        "features": "Heating,Elevator,Kitchen,Air conditioning,Pool",
+        "tags": "Near lake,Close to transit,Entertainment district"
+    },
+    {
+        "location": "293 Bathurst St, Victoria, BC",
+        "type": "House",
+        "nightly_price": 254,
+        "features": "Gym,Laundry,WiFi,Parking,Concierge,Air conditioning",
+        "tags": "Modern building,Luxury"
+    },
+    {
+        "location": "735 Keele St, Toronto, ON",
+        "type": "Townhouse",
+        "nightly_price": 158,
+        "features": "WiFi,Heating,Kitchen",
+        "tags": "Family friendly,Cultural district,Financial district,Walkable"
+    },
+    {
+        "location": "2490 Adelaide St E, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 123,
+        "features": "Balcony,Pool,Heating,Kitchen",
+        "tags": "Luxury,Walkable,Downtown"
+    },
+    {
+        "location": "1745 St Clair Ave W, Edmonton, AB",
+        "type": "Apartment",
+        "nightly_price": 165,
+        "features": "WiFi,Gym,Fireplace",
+        "tags": "Tree-lined street,Historic building,Walkable,Financial district"
+    },
+    {
+        "location": "1025 Richmond St W, Edmonton, AB",
+        "type": "House",
+        "nightly_price": 272,
+        "features": "Fireplace,Concierge,Gym,Heating,WiFi,Laundry",
+        "tags": "Downtown,Family friendly,Entertainment district"
+    },
+    {
+        "location": "1439 Queen St E, Quebec City, QC",
+        "type": "House",
+        "nightly_price": 278,
+        "features": "Gym,Concierge,WiFi,Balcony,Pool,Air conditioning",
+        "tags": "Near lake,Close to transit,Walkable"
+    },
+    {
+        "location": "2012 Eglinton Ave W, Edmonton, AB",
+        "type": "Townhouse",
+        "nightly_price": 243,
+        "features": "Heating,Backyard,Gym,Pool,Fireplace",
+        "tags": "Lakeside,Historic building,Near lake,Downtown"
+    },
+    {
+        "location": "1524 Keele St, Edmonton, AB",
+        "type": "Apartment",
+        "nightly_price": 129,
+        "features": "Concierge,Kitchen,Balcony,Fireplace,Pool",
+        "tags": "Near park,Tree-lined street,Entertainment district,Modern building"
+    },
+    {
+        "location": "3768 Keele St, Toronto, ON",
+        "type": "House",
+        "nightly_price": 287,
+        "features": "Parking,Concierge,Air conditioning,Heating,WiFi",
+        "tags": "Tree-lined street,Lakeside,Cultural district,Quiet street"
+    },
+    {
+        "location": "3110 Queen St E, Victoria, BC",
+        "type": "Townhouse",
+        "nightly_price": 204,
+        "features": "Gym,Elevator,Backyard,Kitchen",
+        "tags": "Quiet street,Entertainment district"
+    },
+    {
+        "location": "3986 Granville St, Edmonton, AB",
+        "type": "Townhouse",
+        "nightly_price": 167,
+        "features": "Elevator,Air conditioning,Laundry,Fireplace,Balcony,Pool",
+        "tags": "Historic building,Suburban,Cultural district"
+    },
+    {
+        "location": "1427 Yonge St, Winnipeg, MB",
+        "type": "Condo",
+        "nightly_price": 161,
+        "features": "Backyard,Heating,Kitchen,Fireplace,Concierge",
+        "tags": "Quiet street,Financial district,Walkable,Modern building"
+    },
+    {
+        "location": "195 Richmond St W, Victoria, BC",
+        "type": "Townhouse",
+        "nightly_price": 195,
+        "features": "Gym,Backyard,Heating,Balcony",
+        "tags": "Close to transit,Trendy neighborhood"
+    },
+    {
+        "location": "3220 Dundas St W, Calgary, AB",
+        "type": "Cabin",
+        "nightly_price": 141,
+        "features": "Laundry,Parking,Air conditioning,Balcony",
+        "tags": "Cultural district,Modern building,Trendy neighborhood"
+    },
+    {
+        "location": "3952 Leslie St, Halifax, NS",
+        "type": "Townhouse",
+        "nightly_price": 227,
+        "features": "Air conditioning,Concierge,Parking,Balcony,Fireplace,Elevator",
+        "tags": "Tree-lined street,Entertainment district,Near lake"
+    },
+    {
+        "location": "3733 Wellington St, Victoria, BC",
+        "type": "Apartment",
+        "nightly_price": 133,
+        "features": "Gym,Laundry,Kitchen",
+        "tags": "Family friendly,Financial district,Entertainment district,Downtown"
+    },
+    {
+        "location": "3863 Bathurst St, Calgary, AB",
+        "type": "Apartment",
+        "nightly_price": 157,
+        "features": "Kitchen,Balcony,Concierge,Pool,Backyard,Gym",
+        "tags": "Suburban,Trendy neighborhood,Historic building,Financial district"
+    },
+    {
+        "location": "184 Howe St, Calgary, AB",
+        "type": "House",
+        "nightly_price": 204,
+        "features": "Elevator,Gym,Kitchen,Parking,Air conditioning,Backyard",
+        "tags": "Suburban,Financial district"
+    },
+    {
+        "location": "2288 Georgia St, Victoria, BC",
+        "type": "Condo",
+        "nightly_price": 150,
+        "features": "WiFi,Parking,Concierge,Elevator,Balcony",
+        "tags": "Scenic view,Trendy neighborhood"
+    },
+    {
+        "location": "3871 Granville St, Calgary, AB",
+        "type": "Cabin",
+        "nightly_price": 151,
+        "features": "Pool,Gym,Fireplace,WiFi",
+        "tags": "Financial district,Historic building,Suburban"
+    },
+    {
+        "location": "858 King St W, Vancouver, BC",
+        "type": "Villa",
+        "nightly_price": 495,
+        "features": "Kitchen,Elevator,Laundry",
+        "tags": "Close to transit,Family friendly,Lakeside,Downtown"
+    },
+    {
+        "location": "721 Yonge St, Edmonton, AB",
+        "type": "House",
+        "nightly_price": 268,
+        "features": "Heating,WiFi,Air conditioning,Backyard,Elevator,Kitchen",
+        "tags": "Close to transit,Modern building"
+    },
+    {
+        "location": "2847 Sherbrooke St W, Winnipeg, MB",
+        "type": "Apartment",
+        "nightly_price": 152,
+        "features": "Kitchen,Parking,Heating,Laundry",
+        "tags": "Family friendly,Modern building"
+    },
+    {
+        "location": "1108 Broadway W, Toronto, ON",
+        "type": "Cabin",
+        "nightly_price": 80,
+        "features": "Gym,WiFi,Concierge",
+        "tags": "Scenic view,Near lake,Suburban,Modern building"
+    },
+    {
+        "location": "3318 Saint Catherine St E, Toronto, ON",
+        "type": "Villa",
+        "nightly_price": 420,
+        "features": "WiFi,Laundry,Heating,Air conditioning",
+        "tags": "Walkable,Scenic view,Downtown,Tree-lined street"
+    },
+    {
+        "location": "1350 King St W, Vancouver, BC",
+        "type": "Townhouse",
+        "nightly_price": 156,
+        "features": "Fireplace,WiFi,Heating,Backyard,Kitchen",
+        "tags": "Quiet street,Close to transit,Financial district,Cultural district"
+    },
+    {
+        "location": "2296 Georgia St, Winnipeg, MB",
+        "type": "Apartment",
+        "nightly_price": 109,
+        "features": "Gym,WiFi,Parking,Balcony,Concierge,Kitchen",
+        "tags": "Cultural district,Financial district,Historic building,Luxury"
+    },
+    {
+        "location": "588 Saint Catherine St E, Ottawa, ON",
+        "type": "Cabin",
+        "nightly_price": 147,
+        "features": "Backyard,Elevator,Fireplace,Laundry,Concierge",
+        "tags": "Cultural district,Lakeside"
+    },
+    {
+        "location": "1275 Broadway W, Winnipeg, MB",
+        "type": "Condo",
+        "nightly_price": 137,
+        "features": "Pool,Balcony,Elevator,WiFi,Heating,Kitchen",
+        "tags": "Historic building,Entertainment district,Tree-lined street"
+    },
+    {
+        "location": "2775 Bay St, Vancouver, BC",
+        "type": "Condo",
+        "nightly_price": 199,
+        "features": "Air conditioning,Backyard,Gym",
+        "tags": "Lakeside,Walkable,Cultural district"
+    },
+    {
+        "location": "2682 Wellington St, Vancouver, BC",
+        "type": "Townhouse",
+        "nightly_price": 158,
+        "features": "Pool,Elevator,Air conditioning,Kitchen,Parking,WiFi",
+        "tags": "Near park,Near lake"
+    },
+    {
+        "location": "306 Bay St, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 134,
+        "features": "Backyard,Heating,Laundry,Pool,Parking",
+        "tags": "Financial district,Tree-lined street,Near park,Downtown"
+    },
+    {
+        "location": "3832 Lawrence Ave E, Montreal, QC",
+        "type": "Townhouse",
+        "nightly_price": 224,
+        "features": "Air conditioning,Gym,Laundry,Concierge",
+        "tags": "Tree-lined street,Lakeside,Trendy neighborhood,Financial district"
+    },
+    {
+        "location": "2031 College St, Montreal, QC",
+        "type": "Condo",
+        "nightly_price": 226,
+        "features": "Parking,Concierge,Backyard,Laundry,Kitchen",
+        "tags": "Scenic view,Downtown"
+    },
+    {
+        "location": "2126 Ossington Ave, Calgary, AB",
+        "type": "Condo",
+        "nightly_price": 179,
+        "features": "Laundry,Heating,Air conditioning,Elevator",
+        "tags": "Walkable,Tree-lined street,Cozy,Near lake"
+    },
+    {
+        "location": "2033 Robson St, Winnipeg, MB",
+        "type": "Townhouse",
+        "nightly_price": 202,
+        "features": "Air conditioning,Backyard,Fireplace,Laundry,Concierge",
+        "tags": "Modern building,Trendy neighborhood,Financial district,Near park"
+    },
+    {
+        "location": "2837 Georgia St, Ottawa, ON",
+        "type": "Condo",
+        "nightly_price": 244,
+        "features": "Fireplace,Kitchen,Balcony,Heating,Backyard,Parking",
+        "tags": "Suburban,Luxury,Quiet street,Cultural district"
+    },
+    {
+        "location": "2291 Yonge St, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 152,
+        "features": "Backyard,Fireplace,WiFi,Parking",
+        "tags": "Near lake,Financial district,Luxury,Family friendly"
+    },
+    {
+        "location": "2172 Leslie St, Vancouver, BC",
+        "type": "House",
+        "nightly_price": 172,
+        "features": "Laundry,Pool,Balcony",
+        "tags": "Lakeside,Downtown"
+    },
+    {
+        "location": "2323 Bloor St W, Victoria, BC",
+        "type": "Villa",
+        "nightly_price": 449,
+        "features": "Air conditioning,Backyard,Gym",
+        "tags": "Scenic view,Quiet street,Cozy,Walkable"
+    },
+    {
+        "location": "2770 Bloor St W, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 160,
+        "features": "Air conditioning,WiFi,Pool,Kitchen,Parking",
+        "tags": "Family friendly,Lakeside"
+    },
+    {
+        "location": "3336 Robson St, Halifax, NS",
+        "type": "Townhouse",
+        "nightly_price": 131,
+        "features": "Gym,Pool,Kitchen,Fireplace",
+        "tags": "Near lake,Cozy,Close to transit"
+    },
+    {
+        "location": "1731 Richmond St W, Winnipeg, MB",
+        "type": "Cabin",
+        "nightly_price": 93,
+        "features": "Concierge,Fireplace,Air conditioning",
+        "tags": "Close to transit,Cozy,Walkable,Trendy neighborhood"
+    },
+    {
+        "location": "1720 Front St W, Victoria, BC",
+        "type": "Townhouse",
+        "nightly_price": 201,
+        "features": "Backyard,WiFi,Balcony,Laundry",
+        "tags": "Cultural district,Trendy neighborhood"
+    },
+    {
+        "location": "2437 Spadina Ave, Calgary, AB",
+        "type": "Cabin",
+        "nightly_price": 172,
+        "features": "Backyard,Fireplace,Heating",
+        "tags": "Family friendly,Luxury,Cultural district"
+    },
+    {
+        "location": "2327 Peel St, Winnipeg, MB",
+        "type": "Cabin",
+        "nightly_price": 153,
+        "features": "Laundry,Air conditioning,Backyard,Balcony",
+        "tags": "Trendy neighborhood,Quiet street"
+    },
+    {
+        "location": "3599 Sherbrooke St W, Calgary, AB",
+        "type": "Townhouse",
+        "nightly_price": 168,
+        "features": "Pool,Backyard,Fireplace,Concierge,Air conditioning",
+        "tags": "Historic building,Close to transit,Cultural district,Quiet street"
+    },
+    {
+        "location": "1336 Bay St, Calgary, AB",
+        "type": "Villa",
+        "nightly_price": 496,
+        "features": "WiFi,Laundry,Balcony",
+        "tags": "Downtown,Modern building,Historic building"
+    },
+    {
+        "location": "3344 Jarvis St, Vancouver, BC",
+        "type": "House",
+        "nightly_price": 280,
+        "features": "Air conditioning,Pool,Laundry,Parking,Kitchen,Fireplace",
+        "tags": "Suburban,Lakeside,Historic building,Financial district"
+    },
+    {
+        "location": "66 Lawrence Ave E, Ottawa, ON",
+        "type": "Cabin",
+        "nightly_price": 155,
+        "features": "Backyard,Gym,Pool,Balcony,WiFi",
+        "tags": "Lakeside,Near park,Family friendly"
+    },
+    {
+        "location": "2283 Bay St, Edmonton, AB",
+        "type": "Villa",
+        "nightly_price": 489,
+        "features": "Backyard,Parking,WiFi,Fireplace",
+        "tags": "Cultural district,Scenic view"
+    },
+    {
+        "location": "601 Leslie St, Montreal, QC",
+        "type": "Condo",
+        "nightly_price": 221,
+        "features": "Kitchen,Elevator,Parking,WiFi",
+        "tags": "Near park,Lakeside"
+    },
+    {
+        "location": "3177 Front St W, Edmonton, AB",
+        "type": "Cabin",
+        "nightly_price": 96,
+        "features": "Parking,Balcony,Laundry,Pool,Kitchen",
+        "tags": "Trendy neighborhood,Scenic view,Luxury,Modern building"
+    },
+    {
+        "location": "3331 Leslie St, Halifax, NS",
+        "type": "House",
+        "nightly_price": 275,
+        "features": "Fireplace,Gym,Air conditioning,WiFi",
+        "tags": "Suburban,Close to transit,Modern building,Cozy"
+    },
+    {
+        "location": "1354 Adelaide St E, Toronto, ON",
+        "type": "Townhouse",
+        "nightly_price": 212,
+        "features": "Elevator,Heating,Concierge",
+        "tags": "Scenic view,Trendy neighborhood,Financial district"
+    },
+    {
+        "location": "245 Jarvis St, Toronto, ON",
+        "type": "Apartment",
+        "nightly_price": 100,
+        "features": "Kitchen,Elevator,Gym",
+        "tags": "Tree-lined street,Cultural district,Quiet street"
+    },
+    {
+        "location": "2472 Leslie St, Edmonton, AB",
+        "type": "Condo",
+        "nightly_price": 239,
+        "features": "Heating,Kitchen,Backyard",
+        "tags": "Close to transit,Modern building"
+    },
+    {
+        "location": "3217 Eglinton Ave W, Victoria, BC",
+        "type": "Cabin",
+        "nightly_price": 95,
+        "features": "Balcony,Backyard,Air conditioning,Gym,Pool,Heating",
+        "tags": "Close to transit,Lakeside,Downtown,Financial district"
+    },
+    {
+        "location": "2312 Queen St E, Vancouver, BC",
+        "type": "Apartment",
+        "nightly_price": 101,
+        "features": "Elevator,Parking,Heating,WiFi,Air conditioning",
+        "tags": "Scenic view,Cultural district,Historic building"
+    },
+    {
+        "location": "1851 Spadina Ave, Toronto, ON",
+        "type": "Villa",
+        "nightly_price": 348,
+        "features": "Pool,Air conditioning,Backyard,WiFi,Fireplace,Gym",
+        "tags": "Close to transit,Family friendly,Quiet street,Near lake"
+    },
+    {
+        "location": "948 Richmond St W, Quebec City, QC",
+        "type": "Townhouse",
+        "nightly_price": 157,
+        "features": "Kitchen,Heating,Parking",
+        "tags": "Downtown,Modern building,Near lake"
+    },
+    {
+        "location": "3900 Wellington St, Ottawa, ON",
+        "type": "Apartment",
+        "nightly_price": 158,
+        "features": "Fireplace,Backyard,WiFi,Kitchen,Elevator",
+        "tags": "Historic building,Suburban,Entertainment district"
+    },
+    {
+        "location": "2457 Eglinton Ave W, Victoria, BC",
+        "type": "Townhouse",
+        "nightly_price": 174,
+        "features": "WiFi,Laundry,Kitchen,Fireplace,Elevator,Parking",
+        "tags": "Downtown,Cozy"
+    },
+    {
+        "location": "2345 Howe St, Edmonton, AB",
+        "type": "Villa",
+        "nightly_price": 449,
+        "features": "Laundry,Pool,Concierge,Parking,Balcony",
+        "tags": "Trendy neighborhood,Scenic view,Cozy,Lakeside"
+    },
+    {
+        "location": "2956 Georgia St, Edmonton, AB",
+        "type": "Townhouse",
+        "nightly_price": 208,
+        "features": "Gym,Elevator,Backyard",
+        "tags": "Trendy neighborhood,Cozy"
+    },
+    {
+        "location": "444 College St, Winnipeg, MB",
+        "type": "Villa",
+        "nightly_price": 483,
+        "features": "Heating,Parking,Pool,Balcony,Kitchen",
+        "tags": "Tree-lined street,Modern building,Financial district,Close to transit"
+    },
+    {
+        "location": "1361 Howe St, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 155,
+        "features": "Kitchen,Fireplace,Pool,Heating,Laundry,Elevator",
+        "tags": "Quiet street,Scenic view,Entertainment district"
+    },
+    {
+        "location": "2693 Ossington Ave, Vancouver, BC",
+        "type": "Condo",
+        "nightly_price": 130,
+        "features": "Air conditioning,Fireplace,Backyard,Pool,Parking",
+        "tags": "Quiet street,Cozy,Family friendly"
+    },
+    {
+        "location": "417 Sherbrooke St W, Calgary, AB",
+        "type": "Cabin",
+        "nightly_price": 174,
+        "features": "Heating,Air conditioning,Fireplace,Kitchen",
+        "tags": "Scenic view,Near lake"
+    },
+    {
+        "location": "735 Yonge St, Calgary, AB",
+        "type": "Apartment",
+        "nightly_price": 157,
+        "features": "Air conditioning,Kitchen,Gym",
+        "tags": "Historic building,Modern building,Close to transit"
+    },
+    {
+        "location": "2763 Howe St, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 154,
+        "features": "Pool,Backyard,Gym,Laundry,Parking",
+        "tags": "Luxury,Cozy"
+    },
+    {
+        "location": "3006 St Clair Ave W, Victoria, BC",
+        "type": "Apartment",
+        "nightly_price": 198,
+        "features": "Pool,Kitchen,WiFi,Fireplace",
+        "tags": "Luxury,Downtown,Scenic view,Historic building"
+    },
+    {
+        "location": "1602 Dundas St W, Halifax, NS",
+        "type": "Cabin",
+        "nightly_price": 138,
+        "features": "WiFi,Kitchen,Gym",
+        "tags": "Financial district,Historic building,Close to transit,Family friendly"
+    },
+    {
+        "location": "1871 Bloor St W, Edmonton, AB",
+        "type": "Condo",
+        "nightly_price": 217,
+        "features": "Pool,Backyard,Balcony,Concierge,Air conditioning,WiFi",
+        "tags": "Lakeside,Modern building,Tree-lined street,Financial district"
+    },
+    {
+        "location": "3004 St Clair Ave W, Vancouver, BC",
+        "type": "Apartment",
+        "nightly_price": 187,
+        "features": "Gym,Concierge,Pool,WiFi,Kitchen,Air conditioning",
+        "tags": "Quiet street,Close to transit,Modern building,Tree-lined street"
+    },
+    {
+        "location": "1517 Robson St, Ottawa, ON",
+        "type": "Condo",
+        "nightly_price": 137,
+        "features": "Heating,Air conditioning,Balcony,WiFi,Laundry,Parking",
+        "tags": "Family friendly,Financial district,Modern building,Quiet street"
+    },
+    {
+        "location": "3365 Sherbrooke St W, Vancouver, BC",
+        "type": "Condo",
+        "nightly_price": 123,
+        "features": "Laundry,Heating,Kitchen,Fireplace,WiFi,Backyard",
+        "tags": "Modern building,Entertainment district,Near park"
+    },
+    {
+        "location": "2321 Howe St, Montreal, QC",
+        "type": "Villa",
+        "nightly_price": 258,
+        "features": "Elevator,Balcony,Gym,Backyard",
+        "tags": "Cultural district,Financial district"
+    },
+    {
+        "location": "3130 Bloor St W, Calgary, AB",
+        "type": "House",
+        "nightly_price": 193,
+        "features": "Heating,Fireplace,Balcony,Concierge,Laundry",
+        "tags": "Quiet street,Family friendly,Modern building"
+    },
+    {
+        "location": "934 Yonge St, Quebec City, QC",
+        "type": "Townhouse",
+        "nightly_price": 190,
+        "features": "Laundry,Concierge,Fireplace",
+        "tags": "Financial district,Family friendly,Near lake"
+    },
+    {
+        "location": "1603 Spadina Ave, Ottawa, ON",
+        "type": "Villa",
+        "nightly_price": 354,
+        "features": "Parking,Heating,Backyard,Pool,Air conditioning,Balcony",
+        "tags": "Tree-lined street,Luxury,Near park"
+    },
+    {
+        "location": "3850 King St W, Winnipeg, MB",
+        "type": "Townhouse",
+        "nightly_price": 151,
+        "features": "Elevator,Parking,Pool",
+        "tags": "Cultural district,Financial district,Luxury,Close to transit"
+    },
+    {
+        "location": "3364 Howe St, Calgary, AB",
+        "type": "Villa",
+        "nightly_price": 365,
+        "features": "Laundry,WiFi,Elevator,Gym",
+        "tags": "Historic building,Cozy"
+    },
+    {
+        "location": "560 Adelaide St E, Victoria, BC",
+        "type": "Cabin",
+        "nightly_price": 109,
+        "features": "Balcony,Laundry,Air conditioning,Parking,Elevator,Pool",
+        "tags": "Trendy neighborhood,Close to transit,Financial district"
+    },
+    {
+        "location": "264 Richmond St W, Ottawa, ON",
+        "type": "Apartment",
+        "nightly_price": 171,
+        "features": "Elevator,Concierge,Pool,Laundry,WiFi,Kitchen",
+        "tags": "Quiet street,Near lake,Close to transit"
+    },
+    {
+        "location": "2316 Main St, Winnipeg, MB",
+        "type": "Apartment",
+        "nightly_price": 176,
+        "features": "Elevator,Gym,Backyard,Parking,Concierge",
+        "tags": "Near park,Downtown,Lakeside,Family friendly"
+    },
+    {
+        "location": "3072 Georgia St, Montreal, QC",
+        "type": "Villa",
+        "nightly_price": 368,
+        "features": "WiFi,Concierge,Parking,Heating,Air conditioning,Balcony",
+        "tags": "Modern building,Entertainment district,Tree-lined street,Scenic view"
+    },
+    {
+        "location": "600 Broadway W, Halifax, NS",
+        "type": "Apartment",
+        "nightly_price": 197,
+        "features": "Gym,Air conditioning,Elevator,Concierge,Pool",
+        "tags": "Family friendly,Near park"
+    },
+    {
+        "location": "2274 Sherbrooke St W, Quebec City, QC",
+        "type": "House",
+        "nightly_price": 293,
+        "features": "WiFi,Kitchen,Elevator,Concierge,Backyard,Air conditioning",
+        "tags": "Entertainment district,Walkable"
+    },
+    {
+        "location": "1157 Jarvis St, Vancouver, BC",
+        "type": "Condo",
+        "nightly_price": 207,
+        "features": "Gym,Elevator,Fireplace,Concierge,WiFi",
+        "tags": "Modern building,Scenic view,Cultural district,Near park"
+    },
+    {
+        "location": "735 Eglinton Ave W, Calgary, AB",
+        "type": "Townhouse",
+        "nightly_price": 237,
+        "features": "Elevator,Air conditioning,Gym,Parking",
+        "tags": "Lakeside,Quiet street,Near park"
+    },
+    {
+        "location": "2252 Wellington St, Montreal, QC",
+        "type": "Condo",
+        "nightly_price": 136,
+        "features": "Kitchen,Elevator,Balcony,Backyard,Pool",
+        "tags": "Near lake,Lakeside,Downtown"
+    },
+    {
+        "location": "2308 Peel St, Ottawa, ON",
+        "type": "Villa",
+        "nightly_price": 300,
+        "features": "Fireplace,Kitchen,Pool,Concierge",
+        "tags": "Tree-lined street,Luxury,Entertainment district,Modern building"
+    },
+    {
+        "location": "2040 Ossington Ave, Ottawa, ON",
+        "type": "Cabin",
+        "nightly_price": 102,
+        "features": "Concierge,Parking,Gym,Laundry",
+        "tags": "Cozy,Family friendly"
+    },
+    {
+        "location": "3601 Wellington St, Toronto, ON",
+        "type": "Apartment",
+        "nightly_price": 126,
+        "features": "Laundry,Pool,Heating,Concierge,Elevator,Backyard",
+        "tags": "Trendy neighborhood,Close to transit"
+    },
+    {
+        "location": "3404 Broadway W, Winnipeg, MB",
+        "type": "Apartment",
+        "nightly_price": 197,
+        "features": "Pool,Heating,Laundry,WiFi,Parking",
+        "tags": "Near park,Near lake,Financial district"
+    },
+    {
+        "location": "1853 Yonge St, Victoria, BC",
+        "type": "House",
+        "nightly_price": 165,
+        "features": "Kitchen,Pool,Laundry,Heating",
+        "tags": "Tree-lined street,Cozy,Lakeside"
+    },
+    {
+        "location": "1495 Robson St, Calgary, AB",
+        "type": "Apartment",
+        "nightly_price": 115,
+        "features": "Parking,Balcony,Kitchen,Air conditioning,Backyard",
+        "tags": "Trendy neighborhood,Historic building,Financial district"
+    },
+    {
+        "location": "3104 Spadina Ave, Winnipeg, MB",
+        "type": "Apartment",
+        "nightly_price": 156,
+        "features": "Kitchen,Elevator,Parking,Fireplace,Gym",
+        "tags": "Modern building,Near park,Cozy,Cultural district"
+    },
+    {
+        "location": "3371 Eglinton Ave W, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 215,
+        "features": "Kitchen,Concierge,WiFi,Heating,Gym",
+        "tags": "Luxury,Tree-lined street,Quiet street,Entertainment district"
+    },
+    {
+        "location": "395 Jarvis St, Quebec City, QC",
+        "type": "Cabin",
+        "nightly_price": 176,
+        "features": "Elevator,Air conditioning,Balcony",
+        "tags": "Trendy neighborhood,Walkable,Cultural district,Family friendly"
+    },
+    {
+        "location": "733 Leslie St, Vancouver, BC",
+        "type": "Apartment",
+        "nightly_price": 119,
+        "features": "Gym,Concierge,Laundry",
+        "tags": "Entertainment district,Tree-lined street"
+    },
+    {
+        "location": "2348 Front St W, Vancouver, BC",
+        "type": "Villa",
+        "nightly_price": 340,
+        "features": "Heating,Concierge,Backyard,Kitchen",
+        "tags": "Historic building,Close to transit,Modern building"
+    },
+    {
+        "location": "3850 Granville St, Calgary, AB",
+        "type": "Townhouse",
+        "nightly_price": 215,
+        "features": "Backyard,Laundry,Pool,Elevator",
+        "tags": "Family friendly,Trendy neighborhood,Near park"
+    },
+    {
+        "location": "2320 Bathurst St, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 127,
+        "features": "Pool,Laundry,Kitchen,Backyard",
+        "tags": "Downtown,Near park,Financial district,Modern building"
+    },
+    {
+        "location": "1821 Howe St, Edmonton, AB",
+        "type": "Villa",
+        "nightly_price": 447,
+        "features": "WiFi,Laundry,Elevator,Concierge,Balcony,Parking",
+        "tags": "Tree-lined street,Modern building,Trendy neighborhood"
+    },
+    {
+        "location": "1626 Eglinton Ave W, Montreal, QC",
+        "type": "Apartment",
+        "nightly_price": 178,
+        "features": "Fireplace,Concierge,Gym,Laundry,Elevator,Heating",
+        "tags": "Walkable,Modern building"
+    },
+    {
+        "location": "1082 Broadway W, Toronto, ON",
+        "type": "Townhouse",
+        "nightly_price": 155,
+        "features": "WiFi,Balcony,Kitchen,Parking,Elevator,Backyard",
+        "tags": "Cultural district,Lakeside,Quiet street,Tree-lined street"
+    },
+    {
+        "location": "2168 Bay St, Quebec City, QC",
+        "type": "House",
+        "nightly_price": 215,
+        "features": "WiFi,Air conditioning,Kitchen,Elevator,Laundry,Gym",
+        "tags": "Scenic view,Suburban,Family friendly"
+    },
+    {
+        "location": "2667 Front St W, Vancouver, BC",
+        "type": "Villa",
+        "nightly_price": 326,
+        "features": "Fireplace,Gym,Parking",
+        "tags": "Historic building,Close to transit,Quiet street,Cozy"
+    },
+    {
+        "location": "984 Bathurst St, Ottawa, ON",
+        "type": "Apartment",
+        "nightly_price": 177,
+        "features": "Elevator,Parking,Heating,Backyard,Pool",
+        "tags": "Historic building,Cozy,Cultural district,Suburban"
+    },
+    {
+        "location": "154 Broadway W, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 202,
+        "features": "Backyard,Pool,WiFi,Laundry",
+        "tags": "Suburban,Entertainment district"
+    },
+    {
+        "location": "2660 Yonge St, Halifax, NS",
+        "type": "Villa",
+        "nightly_price": 357,
+        "features": "Fireplace,Parking,WiFi,Kitchen",
+        "tags": "Tree-lined street,Cultural district,Near park,Cozy"
+    },
+    {
+        "location": "2806 Georgia St, Toronto, ON",
+        "type": "Condo",
+        "nightly_price": 158,
+        "features": "Concierge,Heating,WiFi,Backyard",
+        "tags": "Quiet street,Modern building"
+    },
+    {
+        "location": "3619 Yonge St, Victoria, BC",
+        "type": "Condo",
+        "nightly_price": 171,
+        "features": "Elevator,Backyard,Fireplace,Air conditioning,Kitchen",
+        "tags": "Close to transit,Tree-lined street,Scenic view"
+    },
+    {
+        "location": "245 Spadina Ave, Montreal, QC",
+        "type": "Cabin",
+        "nightly_price": 162,
+        "features": "Concierge,WiFi,Balcony,Heating",
+        "tags": "Close to transit,Near lake,Suburban,Tree-lined street"
+    },
+    {
+        "location": "3855 Sherbrooke St W, Toronto, ON",
+        "type": "Townhouse",
+        "nightly_price": 219,
+        "features": "Parking,Backyard,Gym,Fireplace",
+        "tags": "Walkable,Entertainment district,Financial district"
+    },
+    {
+        "location": "517 Adelaide St E, Quebec City, QC",
+        "type": "Condo",
+        "nightly_price": 172,
+        "features": "Gym,Air conditioning,Concierge,Heating,WiFi",
+        "tags": "Near lake,Family friendly,Modern building,Lakeside"
+    },
+    {
+        "location": "3539 Adelaide St E, Quebec City, QC",
+        "type": "Apartment",
+        "nightly_price": 106,
+        "features": "Fireplace,Laundry,Elevator,Parking,Kitchen,Balcony",
+        "tags": "Suburban,Financial district,Modern building"
+    },
+    {
+        "location": "2761 Queen St E, Winnipeg, MB",
+        "type": "Condo",
+        "nightly_price": 127,
+        "features": "Concierge,Fireplace,Backyard",
+        "tags": "Lakeside,Walkable"
+    },
+    {
+        "location": "715 Howe St, Victoria, BC",
+        "type": "Condo",
+        "nightly_price": 243,
+        "features": "WiFi,Concierge,Parking,Kitchen",
+        "tags": "Trendy neighborhood,Near park,Family friendly,Downtown"
+    },
+    {
+        "location": "926 Broadway W, Quebec City, QC",
+        "type": "Townhouse",
+        "nightly_price": 200,
+        "features": "Concierge,Gym,Balcony,Kitchen",
+        "tags": "Walkable,Suburban,Downtown,Modern building"
+    },
+    {
+        "location": "249 Lawrence Ave E, Calgary, AB",
+        "type": "House",
+        "nightly_price": 267,
+        "features": "Air conditioning,Heating,Pool",
+        "tags": "Historic building,Tree-lined street,Walkable,Lakeside"
+    },
+    {
+        "location": "131 Bathurst St, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 202,
+        "features": "Gym,Air conditioning,Pool,WiFi",
+        "tags": "Luxury,Lakeside,Close to transit,Cultural district"
+    },
+    {
+        "location": "602 King St W, Victoria, BC",
+        "type": "Cabin",
+        "nightly_price": 172,
+        "features": "Backyard,Air conditioning,Fireplace",
+        "tags": "Scenic view,Trendy neighborhood,Suburban,Walkable"
+    },
+    {
+        "location": "382 Bathurst St, Edmonton, AB",
+        "type": "Cabin",
+        "nightly_price": 126,
+        "features": "Fireplace,Laundry,Heating",
+        "tags": "Walkable,Scenic view,Financial district"
+    },
+    {
+        "location": "1152 Lawrence Ave E, Edmonton, AB",
+        "type": "Villa",
+        "nightly_price": 438,
+        "features": "Kitchen,Air conditioning,Backyard,Elevator,Concierge,Pool",
+        "tags": "Near lake,Walkable"
+    },
+    {
+        "location": "3719 Granville St, Vancouver, BC",
+        "type": "Condo",
+        "nightly_price": 127,
+        "features": "Pool,Kitchen,Elevator,Air conditioning,Balcony,Fireplace",
+        "tags": "Entertainment district,Cultural district,Financial district,Near park"
+    },
+    {
+        "location": "108 Bay St, Toronto, ON",
+        "type": "Cabin",
+        "nightly_price": 180,
+        "features": "Balcony,Backyard,Fireplace,Kitchen",
+        "tags": "Financial district,Entertainment district,Downtown,Walkable"
+    },
+    {
+        "location": "2859 Robson St, Ottawa, ON",
+        "type": "Condo",
+        "nightly_price": 222,
+        "features": "Laundry,Kitchen,Parking,Heating,Gym,Concierge",
+        "tags": "Financial district,Scenic view,Modern building"
+    },
+    {
+        "location": "608 Georgia St, Calgary, AB",
+        "type": "Villa",
+        "nightly_price": 471,
+        "features": "Fireplace,WiFi,Parking",
+        "tags": "Historic building,Cozy"
+    },
+    {
+        "location": "1425 Lawrence Ave E, Vancouver, BC",
+        "type": "Condo",
+        "nightly_price": 135,
+        "features": "Air conditioning,Fireplace,WiFi,Elevator",
+        "tags": "Downtown,Near park"
+    },
+    {
+        "location": "3855 Lawrence Ave E, Halifax, NS",
+        "type": "Condo",
+        "nightly_price": 205,
+        "features": "Balcony,Laundry,WiFi,Gym",
+        "tags": "Tree-lined street,Cultural district,Financial district,Trendy neighborhood"
+    },
+    {
+        "location": "3207 Bloor St W, Victoria, BC",
+        "type": "House",
+        "nightly_price": 191,
+        "features": "Balcony,Concierge,WiFi,Backyard",
+        "tags": "Trendy neighborhood,Cultural district,Suburban,Quiet street"
+    },
+    {
+        "location": "1990 Leslie St, Halifax, NS",
+        "type": "Villa",
+        "nightly_price": 354,
+        "features": "Laundry,Concierge,Fireplace,Pool,Parking",
+        "tags": "Scenic view,Luxury,Family friendly,Quiet street"
+    },
+    {
+        "location": "1475 Jarvis St, Montreal, QC",
+        "type": "Apartment",
+        "nightly_price": 121,
+        "features": "Heating,Fireplace,Pool,Laundry,Kitchen",
+        "tags": "Historic building,Near park,Quiet street"
+    },
+    {
+        "location": "854 Bay St, Winnipeg, MB",
+        "type": "Condo",
+        "nightly_price": 220,
+        "features": "Parking,Gym,Heating,Balcony,Kitchen,Elevator",
+        "tags": "Cultural district,Near lake,Historic building"
+    },
+    {
+        "location": "1383 Leslie St, Montreal, QC",
+        "type": "House",
+        "nightly_price": 261,
+        "features": "Laundry,Balcony,Air conditioning,Concierge,Pool",
+        "tags": "Entertainment district,Trendy neighborhood,Close to transit,Historic building"
+    },
+    {
+        "location": "3374 University Ave, Vancouver, BC",
+        "type": "Townhouse",
+        "nightly_price": 231,
+        "features": "Balcony,Kitchen,Gym,Pool,Heating",
+        "tags": "Cozy,Close to transit"
+    },
+    {
+        "location": "33 Lawrence Ave E, Victoria, BC",
+        "type": "Villa",
+        "nightly_price": 343,
+        "features": "Kitchen,Gym,Backyard,Parking",
+        "tags": "Suburban,Cozy"
+    },
+    {
+        "location": "2356 College St, Vancouver, BC",
+        "type": "Condo",
+        "nightly_price": 168,
+        "features": "Laundry,Elevator,Fireplace,Air conditioning",
+        "tags": "Cultural district,Luxury,Historic building"
+    },
+    {
+        "location": "463 Lawrence Ave E, Victoria, BC",
+        "type": "House",
+        "nightly_price": 170,
+        "features": "Parking,Laundry,Gym,Elevator,Balcony",
+        "tags": "Tree-lined street,Near lake,Cultural district"
+    },
+    {
+        "location": "114 Keele St, Edmonton, AB",
+        "type": "Villa",
+        "nightly_price": 342,
+        "features": "Parking,Kitchen,Elevator,Concierge,Laundry",
+        "tags": "Downtown,Modern building,Cultural district"
+    },
+    {
+        "location": "2131 Georgia St, Halifax, NS",
+        "type": "Cabin",
+        "nightly_price": 114,
+        "features": "Fireplace,WiFi,Parking,Laundry,Elevator,Concierge",
+        "tags": "Family friendly,Historic building,Suburban,Tree-lined street"
+    },
+    {
+        "location": "2505 Bloor St W, Ottawa, ON",
+        "type": "Townhouse",
+        "nightly_price": 175,
+        "features": "Pool,Kitchen,Heating,Backyard",
+        "tags": "Financial district,Cultural district,Family friendly,Entertainment district"
+    },
+    {
+        "location": "1873 Richmond St W, Quebec City, QC",
+        "type": "Townhouse",
+        "nightly_price": 159,
+        "features": "Gym,Fireplace,Elevator",
+        "tags": "Near park,Cultural district"
+    },
+    {
+        "location": "61 Richmond St W, Toronto, ON",
+        "type": "Condo",
+        "nightly_price": 247,
+        "features": "Kitchen,Fireplace,Elevator",
+        "tags": "Walkable,Financial district,Close to transit,Cultural district"
+    },
+    {
+        "location": "3517 Eglinton Ave W, Calgary, AB",
+        "type": "House",
+        "nightly_price": 236,
+        "features": "Heating,Laundry,Parking,Air conditioning",
+        "tags": "Modern building,Quiet street,Walkable,Cultural district"
+    },
+    {
+        "location": "3448 Keele St, Ottawa, ON",
+        "type": "Villa",
+        "nightly_price": 361,
+        "features": "Pool,Backyard,Fireplace,Laundry,Gym",
+        "tags": "Entertainment district,Close to transit,Walkable"
+    },
+    {
+        "location": "2060 Robson St, Vancouver, BC",
+        "type": "Cabin",
+        "nightly_price": 146,
+        "features": "Gym,Air conditioning,Parking",
+        "tags": "Scenic view,Trendy neighborhood,Quiet street"
+    }
+]

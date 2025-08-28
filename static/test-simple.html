@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        button { padding: 10px 20px; margin: 10px; }
+        #output { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Simple JavaScript Test</h1>
+    
+    <button id="testBtn">Test Button</button>
+    <button id="filterBtn">Filter Button</button>
+    <button id="chatBtn">Chat Button</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        function log(message) {
+            const output = document.getElementById('output');
+            output.innerHTML += '<div>' + new Date().toLocaleTimeString() + ': ' + message + '</div>';
+            console.log(message);
+        }
+        
+        // Test basic functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            log('DOM loaded');
+            
+            // Test button 1
+            const testBtn = document.getElementById('testBtn');
+            if (testBtn) {
+                testBtn.addEventListener('click', function() {
+                    log('Test button clicked!');
+                });
+            }
+            
+            // Test button 2
+            const filterBtn = document.getElementById('filterBtn');
+            if (filterBtn) {
+                filterBtn.addEventListener('click', function() {
+                    log('Filter button clicked!');
+                });
+            }
+            
+            // Test button 3
+            const chatBtn = document.getElementById('chatBtn');
+            if (chatBtn) {
+                chatBtn.addEventListener('click', function() {
+                    log('Chat button clicked!');
+                });
+            }
+            
+            log('Event listeners attached');
+        });
+        
+        // Test global functions
+        window.testFunction = function() {
+            log('Global function called!');
+        };
+        
+        log('Script loaded');
+    </script>
+</body>
+</html>
