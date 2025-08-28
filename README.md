@@ -1,4 +1,4 @@
-# 🏝️ Cozy DoDo - Vacation Home Assistant
+# 🏝️ Cozy DoDo - Vacation Home Assistant (Team18)
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
@@ -588,20 +588,6 @@ We welcome contributions! Please see our contributing guidelines:
 - Keep commits focused and atomic
 - Test before committing
 
-## 📚 Documentation
-
-### **User Guides**
-- [Travel Planning Usage](TRAVEL_PLANNING_USAGE.md) - AI assistant guide
-- [Property Generation Guide](PROPERTY_GENERATION_GUIDE.md) - Property creation
-- [Image Upload Guide](IMAGE_UPLOAD_GUIDE.md) - Media management
-- [API Setup Guide](API_SETUP_GUIDE.md) - Service configuration
-
-### **Developer Resources**
-- [API Documentation](http://localhost:8000/docs) - Interactive API docs
-- [Code Comments](api.py) - Comprehensive code documentation
-- [Test Examples](test_*.py) - Usage examples and patterns
-- [Database Schema](database.py) - Data structure documentation
-
 ## 🐛 Troubleshooting
 
 ### **Common Issues**
@@ -655,21 +641,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Font Awesome**: Icon library
 - **Google Fonts**: Typography resources
 
-## 📞 Support & Contact
-
-### **Getting Help**
-- **Documentation**: Check this README and guides
-- **Issues**: Report bugs via GitHub issues
-- **Discussions**: Join community discussions
-- **Email**: Contact the development team
-
-### **Community**
-- **GitHub**: [Project Repository](https://github.com/yourusername/SummerHomeRecommender-BestChoice)
-- **Issues**: [Bug Reports](https://github.com/yourusername/SummerHomeRecommender-BestChoice/issues)
-- **Discussions**: [Community Forum](https://github.com/yourusername/SummerHomeRecommender-BestChoice/discussions)
 
 ---
 
-**Built with ❤️ by the Cozy DoDo team**
+**Built with ❤️ by the Cozy DoDo team（Team18 :Mark, Roman, Lyn, Chloe, Cindy）**
 
 *Empowering travelers to discover their perfect vacation homes through intelligent AI and comprehensive property data.*
