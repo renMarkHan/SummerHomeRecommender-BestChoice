@@ -61,7 +61,7 @@ A comprehensive AI-powered vacation property recommendation platform that combin
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.8+ (Recommend Python 3.10)
 - pip package manager
 
 ### Installation
