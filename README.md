@@ -54,7 +54,7 @@ A comprehensive AI-powered vacation property recommendation platform that combin
 
 ### 📊 **Data Management**
 - **SQLite Database**: Lightweight, efficient data storage
-- **Property Database**: 300+ curated vacation properties
+- **Property Database**: 300 curated vacation properties
 - **User Profiles**: Personalized preference management
 - **Image Management**: Property photo uploads and management
 
@@ -149,64 +149,65 @@ The script will automatically:
 ### **Frontend Layer**
 ```
 static/
-├── index.html              # Main application page (27KB, 564 lines)
-├── login.html              # Authentication page (7.2KB, 233 lines)
+├── index.html              # Main application page
+├── login.html              # Authentication page
+├── test_*.html             # Testing pages
 ├── css/
-│   └── style.css           # Main stylesheet (65KB, 3203 lines)
+│   └── style.css           # Main stylesheet
 ├── js/
-│   ├── ui.js               # UI interactions (38KB, 1157 lines)
-│   ├── chat.js             # Chat functionality (24KB, 843 lines)
-│   ├── properties.js       # Property display (29KB, 908 lines)
-│   ├── budget.js           # Budget filtering (15KB, 460 lines)
-│   ├── location-search.js  # Location search (11KB, 285 lines)
-│   ├── address-autocomplete.js # Address completion (8.5KB, 269 lines)
-│   ├── property-types.js   # Property type handling (9.9KB, 324 lines)
-│   ├── features.js         # Feature management (11KB, 339 lines)
-│   └── api.js              # API communication (7.1KB, 261 lines)
+│   ├── ui.js               # UI interactions
+│   ├── chat.js             # Chat functionality
+│   ├── properties.js       # Property display
+│   ├── budget.js           # Budget filtering
+│   ├── location-search.js  # Location search
+│   ├── address-autocomplete.js # Address completion
+│   ├── property-types.js   # Property type handling
+│   ├── features.js         # Feature management
+│   └── api.js              # API communication
 └── images/
     └── properties/         # Property images
 ```
 
 ### **Backend Layer**
 ```
-├── api.py                  # FastAPI application (49KB, 1257 lines)
-├── database.py             # Database operations (3.1KB, 106 lines)
-├── property.py             # Property data model (2.4KB, 67 lines)
-├── user.py                 # User management (9.3KB, 252 lines)
-├── main.py                 # CLI application (7.4KB, 216 lines)
-└── vectorized_filter.py    # Advanced filtering (13KB, 363 lines)
+├── api.py                  # FastAPI application
+├── database.py             # Database operations
+├── property.py             # Property data model
+├── user.py                 # User management
+├── main.py                 # CLI application
+└── vectorized_filter.py    # Advanced filtering
 ```
 
 ### **AI Intelligence Layer**
 ```
-├── travel_planning.py      # AI conversation management (21KB, 482 lines)
-├── travel_recommendation_engine.py # Recommendation logic (11KB, 241 lines)
-├── smart_match_engine.py   # Smart matching algorithms (12KB, 322 lines)
+├── travel_planning.py      # AI conversation management
+├── travel_recommendation_engine.py # Recommendation logic
+├── smart_match_engine.py   # Smart matching algorithms
 ```
 
 ### **Geographic Services**
 ```
-├── add_coordinates.py      # Coordinate addition script (8.3KB, 239 lines)
-├── here_coordinates.py     # HERE API integration (6.1KB, 198 lines)
-├── precise_coordinates.py  # HERE API coordinate service (6.1KB, 201 lines)
-├── complete_coordinates.py # Coordinate completion utility (5.6KB, 170 lines)
-└── add_coordinates_to_db.py # Database coordinate management (2.7KB, 83 lines)
+├── add_coordinates.py      # Coordinate addition script
+├── here_coordinates.py     # HERE API integration
+├── precise_coordinates.py  # HERE API coordinate service
+├── complete_coordinates.py # Coordinate completion utility
+└── add_coordinates_to_db.py # Database coordinate management
 ```
 
 ### **Data Management**
 ```
-├── seed_data.py            # Database seeding (2.2KB, 78 lines)
-├── add_sample_images.py    # Image management (2.3KB, 64 lines)
-├── bulk_upload_images.py   # Bulk image operations (7.5KB, 223 lines)
-└── properties_300.json     # Property data (72KB, 2102 lines)
+├── add_sample_images.py    # Image management
+├── bulk_upload_images.py   # Bulk image operations
+└── properties_300.json     # Property data
 ```
 
 ### **Testing & Development**
 ```
-├── test_*.py               # Comprehensive test suite (20+ test files)
+test/
+├── test_*.py               # Comprehensive test suite
 ├── debug_*.py              # Debugging utilities
-├── test_*.html             # Frontend testing pages
-└── requirements.txt         # Python dependencies
+
+├── requirements.txt         # Python dependencies
 ```
 
 ## 🏗️ **Detailed Architecture Overview**
@@ -283,7 +284,7 @@ static/
 
 #### **2. API Gateway Layer**
 
-##### **Core Component: `api.py` (1257 lines)**
+##### **Core Component: `api.py` **
 ```python
 # FastAPI application instance
 app = FastAPI(
@@ -309,7 +310,7 @@ app = FastAPI(
 
 #### **3. Business Logic Layer**
 
-##### **A. AI Travel Planning Module (`travel_planning.py` - 482 lines)**
+##### **A. AI Travel Planning Module (`travel_planning.py`)**
 ```python
 class TravelPlanningSession:
     """Travel planning session management"""
@@ -326,7 +327,7 @@ class TravelPlanningSession:
 - AI-driven question generation
 ```
 
-##### **B. Property Recommendation Engine (`travel_recommendation_engine.py` - 241 lines)**
+##### **B. Property Recommendation Engine (`travel_recommendation_engine.py`)**
 ```python
 class TravelRecommendationEngine:
     """Intelligent property recommendation engine"""
@@ -341,7 +342,7 @@ class TravelRecommendationEngine:
         """Generate travel recommendations"""
 ```
 
-##### **C. Smart Matching Engine (`smart_match_engine.py` - 322 lines)**
+##### **C. Smart Matching Engine (`smart_match_engine.py` )**
 ```python
 class SmartMatchEngine:
     """Intelligent property matching engine"""
@@ -355,7 +356,7 @@ class SmartMatchEngine:
 
 #### **4. Data Access Layer**
 
-##### **A. Database Management (`database.py` - 106 lines)**
+##### **A. Database Management (`database.py`)**
 ```python
 # SQLite database operations
 def create_tables():
@@ -368,7 +369,7 @@ def get_all_properties():
     """Get all property data"""
 ```
 
-##### **B. Property Data Model (`property.py` - 67 lines)**
+##### **B. Property Data Model (`property.py`)**
 ```python
 class Property:
     """Property data model"""
@@ -379,7 +380,7 @@ class Property:
         # Property attributes initialization
 ```
 
-##### **C. Vectorized Filtering (`vectorized_filter.py` - 363 lines)**
+##### **C. Vectorized Filtering (`vectorized_filter.py`)**
 ```python
 class VectorizedFilter:
     """High-performance vectorized filtering"""
@@ -407,7 +408,7 @@ async def generate_response_with_ai(prompt):
 ```python
 # Multi-API geocoding
 - Nominatim (OpenStreetMap): Free service
-- HERE Maps API: High-precision service (250,000 free requests/month)
+- HERE Maps API: High-precision service
 - Intelligent address parsing and coordinate acquisition
 ```
 
@@ -462,45 +463,6 @@ Property Cards ← Frontend Rendering ← Filtered Results
 - **API-First**: Service-to-service communication through APIs
 - **Independent Deployment**: Each service can be updated independently
 
-### **Architecture Advantages**
-
-#### **1. Maintainability**
-- Clear code organization structure
-- Modular functionality design
-- Unified coding standards
-
-#### **2. Scalability**
-- Easy to add new functional modules
-- Support for horizontal scaling
-- Plugin-based architecture design
-
-#### **3. Performance Optimization**
-- Vectorized data processing
-- Intelligent caching strategies
-- Asynchronous operation support
-
-#### **4. Development Efficiency**
-- Complete test coverage
-- Detailed documentation
-- Standardized development process
-
-### **Architecture Evolution Roadmap**
-
-#### **Short-term Optimization**
-- Add Redis caching layer
-- Implement database connection pooling
-- Optimize static resource loading
-
-#### **Medium-term Expansion**
-- Introduce message queue system
-- Implement microservice separation
-- Add monitoring and logging systems
-
-#### **Long-term Planning**
-- Containerized deployment
-- Cloud-native architecture
-- Distributed system design
-
 ## 🔧 Core Workflows
 
 ### **Property Discovery Flow**
@@ -522,32 +484,6 @@ Property Cards ← Frontend Rendering ← Filtered Results
 2. **Image Upload**: Property photos and descriptions
 3. **Coordinate Generation**: Geographic data enrichment
 4. **Quality Assurance**: Data validation and verification
-
-## 🎯 Advanced Features
-
-### **AI-Powered Travel Planning**
-- **Natural Language Understanding**: Conversational AI interface
-- **Multi-Turn Conversations**: Context-aware interactions
-- **Intelligent Recommendations**: AI-driven property matching
-- **Preference Learning**: User preference adaptation
-
-### **Smart Property Matching**
-- **Vectorized Filtering**: High-performance data processing
-- **Scoring Algorithms**: Multi-factor property ranking
-- **Geographic Intelligence**: Location-based optimization
-- **Feature Matching**: Amenity and requirement alignment
-
-### **Geographic Intelligence**
-- **Multi-API Fallback**: HERE Maps integration for high-precision geocoding
-- **Address Parsing**: Intelligent location extraction
-- **Coordinate Management**: GPS data storage and retrieval
-- **Distance Calculations**: Radius-based property filtering
-
-### **Data Management**
-- **SQLite Database**: Efficient local data storage
-- **Image Management**: Property photo organization
-- **Bulk Operations**: Batch data processing
-- **Data Validation**: Quality assurance systems
 
 ## 🛠️ Technical Implementation
 
@@ -614,35 +550,6 @@ users (
 - **`exported_properties.json`**: Full export with metadata (includes export information)
 - **Import Scripts**: Use `import_properties.py` for automated database import
 
-## 🎨 Design Philosophy
-
-### **UX Principles**
-- **User-Centric Design**: Intuitive navigation and interactions
-- **Responsive Layout**: Mobile-first design approach
-- **Performance Focus**: Fast loading and smooth interactions
-- **Accessibility**: Inclusive design considerations
-
-### **Visual Design Elements**
-- **Modern Aesthetics**: Clean, professional appearance
-- **Color System**: Consistent brand identity
-- **Typography**: Readable, elegant fonts
-- **Iconography**: Meaningful visual elements
-- **Spacing**: Balanced layout composition
-
-## 🧪 Development & Testing
-
-### **Testing Strategy**
-- **Unit Tests**: Individual component testing
-- **Integration Tests**: End-to-end workflow testing
-- **Frontend Testing**: UI interaction validation
-- **API Testing**: Backend endpoint verification
-
-### **Development Workflow**
-- **Version Control**: Git-based development
-- **Code Quality**: Consistent coding standards
-- **Documentation**: Comprehensive code comments
-- **Error Handling**: Robust error management
-
 ## 🚀 Deployment & Operations
 
 ### **Environment Setup**
@@ -656,32 +563,6 @@ users (
 - **Database Queries**: Optimized SQL operations
 - **Caching**: Response caching strategies
 - **Compression**: Asset compression
-
-## 🔮 Future Roadmap
-
-### **Phase 1: Core Features** ✅
-- [x] Property browsing and filtering
-- [x] AI travel planning assistant
-- [x] Geographic intelligence
-- [x] User profile management
-
-### **Phase 2: Enhanced AI** 🚧
-- [ ] Advanced recommendation algorithms
-- [ ] Machine learning integration
-- [ ] Predictive analytics
-- [ ] Natural language improvements
-
-### **Phase 3: Platform Expansion** 📋
-- [ ] Multi-language support
-- [ ] Mobile application
-- [ ] Advanced analytics dashboard
-- [ ] Integration APIs
-
-### **Phase 4: Enterprise Features** 📋
-- [ ] Multi-tenant architecture
-- [ ] Advanced security features
-- [ ] Performance monitoring
-- [ ] Scalability improvements
 
 ## 🤝 Contributing
 
